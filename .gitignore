@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# 图片：手写作答照片、题目配图等只留本地，不入库
+*.heic
+*.HEIC
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.gif
+*.GIF
+*.webp
+*.WEBP
+*.bmp
+*.BMP
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*.dng
+*.DNG
