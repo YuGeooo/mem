@@ -22,3 +22,7 @@
 *.TIFF
 *.dng
 *.DNG
+
+# PDF：原卷与草稿只留本地，不入库
+*.pdf
+*.PDF
