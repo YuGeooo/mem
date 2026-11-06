@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "volumes": [
+    {
+      "slug": "2024-exam",
+      "name": "2024 管综真题",
+      "subject": "管综",
+      "papers": ["2024年管综真题/paper.md"],
+      "answerSources": ["2024年管综真题/答案速查.md"],
+      "totalQuestions": 57,
+      "scorableQuestions": 55,
+      "notes": "全局题号 1–55 + 写作 56–57；Q25 条件 (2) 于 2026-11-07 由 S6=26 修正为 S9=26，正确答案 C 改 E"
+    },
+    {
+      "slug": "2025-english",
+      "name": "2025 英语二",
+      "subject": "英语",
+      "papers": ["2025年英语二/paper.md"],
+      "answerSources": ["2025年英语二/试卷总结.md"],
+      "totalQuestions": 48,
+      "scorableQuestions": 45,
+      "notes": "完形 1–20、阅读 Part A 21–40、Part B 41–45；翻译与写作 A/B 为主观题"
+    },
+    {
+      "slug": "formal-logic",
+      "name": "形式逻辑与综合推理",
+      "subject": "管综",
+      "papers": [
+        "形式逻辑与综合推理/形式逻辑与综合推理一.md",
+        "形式逻辑与综合推理/形式逻辑与综合推理二.md"
+      ],
+      "answerSources": [
+        "形式逻辑与综合推理/answer1/answer1-1.md",
+        "形式逻辑与综合推理/answer2/answer2-1.md"
+      ],
+      "totalQuestions": 30,
+      "scorableQuestions": 30,
+      "answerOverrides": { "formal-logic-p2-q04": "C" },
+      "notes": "两卷各 15 题，题号各自从 1 开始；ID 必须带 p1 / p2。卷二参考答案串第 4 位 E 与判定表/逐题分析冲突，独立复算应为 C，见 answer2-1.md 的 2026-11-07 核对说明；此处显式覆盖，不改写原串"
+    },
+    {
+      "slug": "reasoning-2",
+      "name": "专项训练二-五大条件类推理题",
+      "subject": "管综",
+      "papers": ["专项训练二-五大条件类推理题/paper.md"],
+      "answerSources": ["专项训练二-五大条件类推理题/答案速查.md"],
+      "totalQuestions": 30,
+      "scorableQuestions": 30,
+      "notes": "全局 1–30；第 4 题条件 (3) 曾两次修正转录，见 paper.md 修订记录"
+    },
+    {
+      "slug": "math-applied",
+      "name": "数学应用题",
+      "subject": "管综",
+      "papers": ["数学应用题/应用题.md"],
+      "answerSources": ["数学应用题/answer*/answer*.md"],
+      "totalQuestions": 81,
+      "scorableQuestions": 81,
+      "notes": "题号按考点重新从 1 编号；ID 必须带 topic；带 (1)(2) 两小问的是条件充分性判断题"
+    }
+  ],
+  "topicAliases": {
+    "利润": "profit",
+    "路程": "distance",
+    "工程": "engineering",
+    "交叉": "cross-ratio",
+    "浓度": "concentration",
+    "分段": "tiered-pricing",
+    "集合": "sets",
+    "不定方程": "diophantine",
+    "线规": "linear-programming",
+    "至少至多": "at-least-at-most"
+  },
+  "mathTopics": [
+    { "section": 1, "name": "商品利润", "topic": "profit", "count": 10 },
+    { "section": 2, "name": "路程问题", "topic": "distance", "count": 14 },
+    { "section": 3, "name": "工程问题", "topic": "engineering", "count": 19 },
+    { "section": 4, "name": "交叉比例法", "topic": "cross-ratio", "count": 1 },
+    { "section": 5, "name": "溶液浓度", "topic": "concentration", "count": 9 },
+    { "section": 6, "name": "分段计费", "topic": "tiered-pricing", "count": 4 },
+    { "section": 7, "name": "集合", "topic": "sets", "count": 4 },
+    { "section": 8, "name": "不定方程", "topic": "diophantine", "count": 11 },
+    { "section": 9, "name": "线性规划", "topic": "linear-programming", "count": 3 },
+    { "section": 10, "name": "至少至多", "topic": "at-least-at-most", "count": 6 }
+  ]
+}
