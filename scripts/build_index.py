@@ -255,14 +255,14 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
         add(id=qid_2024(n), volume="2024-exam", paper="2024年管综真题/paper.md",
             number=n, section=section, topic=topic, type=qtype,
             answer=a24.get(n), answerSource="2024年管综真题/答案速查.md",
-            source=f"2024年管综真题/paper.md#Q{n}", revision=rev)
+            source=f"2024年管综真题/paper.md#{qid_2024(n)}", revision=rev)
     for suffix, n, qtype, name in [
         ("essay1", 56, "essay", "论证有效性分析"), ("essay2", 57, "writing", "论说文")
     ]:
         add(id=f"2024-exam-{suffix}", volume="2024-exam", paper="2024年管综真题/paper.md",
             number=n, section="四、写作", topic=name, type=qtype,
             answerStatus="estimated", scorable=False,
-            source=f"2024年管综真题/paper.md#Q{n}")
+            source=f"2024年管综真题/paper.md#2024-exam-{suffix}")
 
     aen = answers_english()
     for n in range(1, 46):
@@ -275,7 +275,7 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
         add(id=qid_english(n), volume="2025-english", paper="2025年英语二/paper.md",
             number=n, section=section, topic=topic, type=qtype,
             answer=aen.get(n), answerSource="2025年英语二/试卷总结.md",
-            source=f"2025年英语二/paper.md#Q{n}")
+            source=f"2025年英语二/paper.md#{qid_english(n)}")
     for qid, n, qtype, name in [
         ("2025-english-translation", 46, "translation", "翻译"),
         ("2025-english-writing-a", 47, "writing", "写作 Part A"),
@@ -300,7 +300,7 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
                 type="logic", answer=ans,
                 answerSource=(asrc + f"（{qid} 订正 {raw}→{ans}，见 answerOverrides）"
                               if qid in overrides else asrc),
-                source=f"{src}#Q{n}")
+                source=f"{src}#{qid}")
 
     ar2 = answers_reasoning()
     for n in range(1, 31):
@@ -309,7 +309,7 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
             section="专项训练 2 五大条件类推理题", topic="条件类推理", type="logic",
             answer=ar2.get(n),
             answerSource="专项训练二-五大条件类推理题/答案速查.md",
-            source=f"专项训练二-五大条件类推理题/paper.md#Q{n}",
+            source=f"专项训练二-五大条件类推理题/paper.md#{qid_reasoning(n)}",
             revision=({"date": "2026-11-05", "change": "条件(3) 补回「不售卖杨桃」的「不」字；「不选择丁」改「不选择壬」"}
                       if n == 4 else None))
 
@@ -323,7 +323,7 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
                 number=n, section=f"考点{t['section']} {t['name']}", topic=t["name"],
                 type="data-sufficiency" if key in ds else "problem",
                 answer=am.get(key), answerSource="数学应用题/answer*/answer*.md 判定表",
-                source=f"数学应用题/应用题.md#考点{t['section']}-{n}")
+                source=f"数学应用题/应用题.md#{qid_math(t['topic'], n)}")
     return qs, errors
 
 
@@ -615,10 +615,27 @@ def check_source_numbers(cfg: dict) -> list[str]:
     return errors
 
 
+def check_anchors(questions: list[dict]) -> list[str]:
+    """校验 source 里的锚点在题库 Markdown 中真实存在，防止回链又变成伪锚点。"""
+    by_file: dict[str, set[str]] = {}
+    for q in questions:
+        path, _, frag = q["source"].partition("#")
+        if frag:
+            by_file.setdefault(path, set()).add(frag)
+    errors: list[str] = []
+    for path, ids in sorted(by_file.items()):
+        found = set(re.findall(r'<a id="([^"]+)"></a>', read(path)))
+        missing = ids - found
+        if missing:
+            errors.append(f"{path}: 缺 {len(missing)} 个 ID 锚点，例 {sorted(missing)[:3]}")
+    return errors
+
+
 def validate(cfg: dict, questions: list[dict], sessions: list[dict],
              attempts: list[dict], redo: list[dict], parse_issues: list[str]) -> list[str]:
     errors = list(parse_issues)
     errors.extend(check_source_numbers(cfg))
+    errors.extend(check_anchors(questions))
     qmap = {q["id"]: q for q in questions}
     if len(qmap) != len(questions):
         errors.append("questions.ID 有重复")
@@ -676,6 +693,7 @@ def report(cfg: dict, questions: list[dict], sessions: list[dict], attempts: lis
         f"sessions: {len(sessions)} | attempts: {len(attempts)} (有判定 {judged}, 未判定 {len(attempts) - judged})",
         "timing: " + " / ".join(f"{k} {v}" for k, v in sorted(timing.items())),
         f"redo rows: {len(redo)}/12 mapped",
+        f"anchors: {sum(1 for q in questions if '#' in q['source'])}/{len(questions)} verified",
         f"answer overrides: {sum(len(v.get('answerOverrides', {})) for v in cfg['volumes'])}（volumes.json 显式订正，原文保留）",
     ]
     for vol in cfg["volumes"]:
