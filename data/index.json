@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-08T19:44:05+08:00",
+    "generatedAt": "2026-11-08T20:06:48+08:00",
     "generator": "scripts/build_index.py",
     "sourceFiles": 49,
     "coverage": {
@@ -12,8 +12,8 @@
     "timing": {
       "session": 18,
       "per-question": 0,
-      "mixed": 0,
-      "none": 17
+      "mixed": 1,
+      "none": 16
     },
     "errors": []
   },
@@ -4914,9 +4914,9 @@
       "file": "2020年管综合真题/answer4.md",
       "volume": "2020-exam",
       "questionCount": 0,
-      "timingMode": "none",
-      "durationMin": null,
-      "durationSource": null,
+      "timingMode": "mixed",
+      "durationMin": 75.0,
+      "durationSource": "draft",
       "note": null
     },
     {
