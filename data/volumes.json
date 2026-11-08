@@ -2,6 +2,16 @@
   "version": 1,
   "volumes": [
     {
+      "slug": "2020-exam",
+      "name": "2020 管综真题",
+      "subject": "管综",
+      "papers": ["2020年管综合真题/paper.md"],
+      "answerSources": ["2020年管综合真题/答案速查.md"],
+      "totalQuestions": 57,
+      "scorableQuestions": 55,
+      "notes": "全局题号 1–55 + 写作 56–57；2026-11-08 按原卷照片逐页转录，目录名沿用「2020年管综合真题」；条件充分性判断每题 3 分"
+    },
+    {
       "slug": "2024-exam",
       "name": "2024 管综真题",
       "subject": "管综",

@@ -36,6 +36,14 @@ ENGLISH_SUBJECTIVE = {
 }
 
 
+def id_2020(n: int, _sec: int) -> str:
+    if n == 56:
+        return "2020-exam-essay1"
+    if n == 57:
+        return "2020-exam-essay2"
+    return bi.qid_2020(n)
+
+
 def id_2024(n: int, _sec: int) -> str:
     if n == 56:
         return "2024-exam-essay1"
@@ -53,6 +61,7 @@ def id_math(n: int, sec: int) -> str:
 
 
 RULES = [
+    {"file": "2020年管综合真题/paper.md", "pattern": BOLD, "id": id_2020, "expect": 57},
     {"file": "2024年管综真题/paper.md", "pattern": BOLD, "id": id_2024, "expect": 57},
     {"file": "2025年英语二/paper.md", "pattern": NUM, "id": id_english, "expect": 48},
     {"file": "形式逻辑与综合推理/形式逻辑与综合推理一.md",

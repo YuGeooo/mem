@@ -57,6 +57,7 @@ def rel(path: Path) -> str:
 
 def files_of(slug: str) -> list[Path]:
     patterns = {
+        "2020-exam": ["2020年管综合真题/answer*.md"],
         "2024-exam": ["2024年管综真题/answer*.md"],
         "2025-english": ["2025年英语二/answer*.md"],
         "formal-logic": ["形式逻辑与综合推理/answer*/answer*.md"],
@@ -80,14 +81,23 @@ def session_id(slug: str, path: Path) -> str:
 
 # ---------------------------------------------------------------- 答案提取
 
-def answers_2024() -> dict[int, str]:
-    text = read("2024年管综真题/答案速查.md")
+def answers_from_key(path: str) -> dict[int, str]:
+    """解析「| 1~5 | D A B B E |」形式的答案速查表。"""
+    text = read(path)
     rows = re.findall(r"\|\s*(\d+)\s*~\s*(\d+)\s*\|\s*([A-E](?:\s+[A-E])*)\s*\|", text)
     out: dict[int, str] = {}
     for lo, _hi, seq in rows:
         for i, ch in enumerate(seq.split()):
             out[int(lo) + i] = ch
     return out
+
+
+def answers_2020() -> dict[int, str]:
+    return answers_from_key("2020年管综合真题/答案速查.md")
+
+
+def answers_2024() -> dict[int, str]:
+    return answers_from_key("2024年管综真题/答案速查.md")
 
 
 def answers_english() -> dict[int, str]:
@@ -205,6 +215,10 @@ def parse_scores() -> dict[str, tuple[int, int]]:
 
 # ---------------------------------------------------------------- ID 规则
 
+def qid_2020(n: int) -> str:
+    return f"2020-exam-q{n:03d}"
+
+
 def qid_2024(n: int) -> str:
     return f"2024-exam-q{n:03d}"
 
@@ -239,6 +253,26 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
         )
         base.update(kw)
         qs.append(base)
+
+    a20 = answers_2020()
+    for n in range(1, 56):
+        if n <= 15:
+            section, topic, qtype = "一、问题求解", "问题求解", "problem"
+        elif n <= 25:
+            section, topic, qtype = "二、条件充分性判断", "条件充分性判断", "data-sufficiency"
+        else:
+            section, topic, qtype = "三、逻辑推理", "逻辑推理", "logic"
+        add(id=qid_2020(n), volume="2020-exam", paper="2020年管综合真题/paper.md",
+            number=n, section=section, topic=topic, type=qtype,
+            answer=a20.get(n), answerSource="2020年管综合真题/答案速查.md",
+            source=f"2020年管综合真题/paper.md#{qid_2020(n)}")
+    for suffix, n, qtype, name in [
+        ("essay1", 56, "essay", "论证有效性分析"), ("essay2", 57, "writing", "论说文")
+    ]:
+        add(id=f"2020-exam-{suffix}", volume="2020-exam", paper="2020年管综合真题/paper.md",
+            number=n, section="四、写作", topic=name, type=qtype,
+            answerStatus="estimated", scorable=False,
+            source=f"2020年管综合真题/paper.md#2020-exam-{suffix}")
 
     a24 = answers_2024()
     for n in range(1, 56):
@@ -417,7 +451,7 @@ def make_attempt(sess: dict, qid: str, ua, ca, correct, source, note=None) -> di
     }
 
 
-def attempts_2024(sess: dict, qmap: dict) -> list[dict]:
+def attempts_2024(sess: dict, qmap: dict, qid_fn=qid_2024) -> list[dict]:
     text = read(sess["file"])
     out: list[dict] = []
     for block in re.split(r"(?=^## Q\d+)", text, flags=re.M):
@@ -438,7 +472,7 @@ def attempts_2024(sess: dict, qmap: dict) -> list[dict]:
                 sig = head_verdict
             found[q] = (ua, sig, am.group(0).strip())
         for q in range(lo, hi + 1):
-            qid = qid_2024(q)
+            qid = qid_fn(q)
             ua, sig, src = found.get(q, (None, head_verdict, "无 Answer 行"))
             ca = qmap.get(qid, {}).get("answer")
             note = None if ua else "未作答 / 无判定记录"
@@ -566,8 +600,8 @@ def build_attempts(sessions: list[dict], qmap: dict, cfg: dict,
     exceptions: list[str] = []
     for sess in sessions:
         slug = sess["volume"]
-        if slug == "2024-exam":
-            batch = attempts_2024(sess, qmap)
+        if slug in ("2020-exam", "2024-exam"):
+            batch = attempts_2024(sess, qmap, qid_2020 if slug == "2020-exam" else qid_2024)
         elif slug == "2025-english":
             batch = attempts_english(sess, qmap)
         else:
@@ -595,6 +629,7 @@ def check_source_numbers(cfg: dict) -> list[str]:
             errors.append(f"{label}: 题号应为 1–{expected}，实际抓到 {len(nums)} 个 {nums[:6]}…")
         return nums
 
+    check("2020-exam", "2020年管综合真题/paper.md", r"^\*\*(\d+)\.\*\*", 57)
     check("2024-exam", "2024年管综真题/paper.md", r"^\*\*(\d+)\.\*\*", 57)
     check("formal-logic 卷一", "形式逻辑与综合推理/形式逻辑与综合推理一.md", r"^\*\*(\d+)\.\*\*", 15)
     check("formal-logic 卷二", "形式逻辑与综合推理/形式逻辑与综合推理二.md", r"^\*\*(\d+)\.\*\*", 15)
@@ -639,11 +674,13 @@ def validate(cfg: dict, questions: list[dict], sessions: list[dict],
     qmap = {q["id"]: q for q in questions}
     if len(qmap) != len(questions):
         errors.append("questions.ID 有重复")
-    if len(questions) != 246:
-        errors.append(f"questions 应为 246，实际 {len(questions)}")
+    expected_total = sum(v["totalQuestions"] for v in cfg["volumes"])
+    expected_scorable = sum(v["scorableQuestions"] for v in cfg["volumes"])
+    if len(questions) != expected_total:
+        errors.append(f"questions 应为 {expected_total}，实际 {len(questions)}")
     scorable = sum(1 for q in questions if q["scorable"])
-    if scorable != 241:
-        errors.append(f"可评分题应为 241，实际 {scorable}")
+    if scorable != expected_scorable:
+        errors.append(f"可评分题应为 {expected_scorable}，实际 {scorable}")
     for vol in cfg["volumes"]:
         n = sum(1 for q in questions if q["volume"] == vol["slug"])
         if n != vol["totalQuestions"]:
