@@ -475,7 +475,8 @@ def attempts_2024(sess: dict, qmap: dict, qid_fn=qid_2024) -> list[dict]:
             qid = qid_fn(q)
             ua, sig, src = found.get(q, (None, head_verdict, "无 Answer 行"))
             ca = qmap.get(qid, {}).get("answer")
-            note = None if ua else "未作答 / 无判定记录"
+            note = None if ua else ("未作答（按错计）" if sig is False
+                                   else "未作答 / 无判定记录")
             out.append(make_attempt(sess, qid, ua, ca, sig,
                                     f"{sess['file']} {src}", note))
     return out
