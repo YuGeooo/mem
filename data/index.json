@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-11-08T19:35:14+08:00",
+    "generatedAt": "2026-11-08T19:44:05+08:00",
     "generator": "scripts/build_index.py",
-    "sourceFiles": 47,
+    "sourceFiles": 49,
     "coverage": {
       "questions": 303,
-      "attempts": 283,
-      "sessions": 34,
+      "attempts": 285,
+      "sessions": 35,
       "redoRows": 12
     },
     "timing": {
       "session": 18,
       "per-question": 0,
       "mixed": 0,
-      "none": 16
+      "none": 17
     },
     "errors": []
   },
@@ -4906,6 +4906,17 @@
       "timingMode": "session",
       "durationMin": 47.0,
       "durationSource": "draft",
+      "note": null
+    },
+    {
+      "id": "2020-exam-a4",
+      "date": "2026-11-08",
+      "file": "2020年管综合真题/answer4.md",
+      "volume": "2020-exam",
+      "questionCount": 0,
+      "timingMode": "none",
+      "durationMin": null,
+      "durationSource": null,
       "note": null
     },
     {
@@ -11500,6 +11511,50 @@
       "durationMin": null,
       "durationSource": null,
       "source": "2024年管综真题/answer11.md 原文与批改",
+      "verified": false,
+      "note": "主观题：无客观判定，估分见总结"
+    },
+    {
+      "id": "2026-11-08-2020-exam-a4-2020-exam-essay1",
+      "date": "2026-11-08",
+      "sessionId": "2020-exam-a4",
+      "session": "2020年管综合真题/answer4.md",
+      "questionId": "2020-exam-essay1",
+      "userAnswer": null,
+      "correctAnswer": null,
+      "correct": null,
+      "substantiveCorrect": null,
+      "score": 19,
+      "scoreMax": 30,
+      "scoreBasis": "estimated",
+      "errorTags": [],
+      "errorNote": null,
+      "isRedo": false,
+      "durationMin": null,
+      "durationSource": null,
+      "source": "2020年管综合真题/answer4.md 原文与批改",
+      "verified": false,
+      "note": "主观题：无客观判定，估分见总结"
+    },
+    {
+      "id": "2026-11-08-2020-exam-a4-2020-exam-essay2",
+      "date": "2026-11-08",
+      "sessionId": "2020-exam-a4",
+      "session": "2020年管综合真题/answer4.md",
+      "questionId": "2020-exam-essay2",
+      "userAnswer": null,
+      "correctAnswer": null,
+      "correct": null,
+      "substantiveCorrect": null,
+      "score": 25,
+      "scoreMax": 35,
+      "scoreBasis": "estimated",
+      "errorTags": [],
+      "errorNote": null,
+      "isRedo": false,
+      "durationMin": null,
+      "durationSource": null,
+      "source": "2020年管综合真题/answer4.md 原文与批改",
       "verified": false,
       "note": "主观题：无客观判定，估分见总结"
     }

@@ -210,6 +210,14 @@ def parse_scores() -> dict[str, tuple[int, int]]:
         m = re.search(pat, mg)
         if m:
             out[qid] = (int(m.group(1)), int(m.group(2)))
+    cn = read("2020年管综合真题/批改总结.md")
+    for qid, pat in [
+        ("2020-exam-essay1", r"论证有效性分析\s*\|\s*估分\s*\|\s*(\d+)\s*\|\s*(\d+)"),
+        ("2020-exam-essay2", r"论说文\s*\|\s*估分\s*\|\s*(\d+)\s*\|\s*(\d+)"),
+    ]:
+        m = re.search(pat, cn)
+        if m:
+            out[qid] = (int(m.group(1)), int(m.group(2)))
     return out
 
 
@@ -546,6 +554,8 @@ def add_subjective(sessions: list[dict], attempts: list[dict], scores: dict, qma
         "2025-english-writing-b": ("2025-english", "a5"),
         "2024-exam-essay1": ("2024-exam", "a10"),
         "2024-exam-essay2": ("2024-exam", "a11"),
+        "2020-exam-essay1": ("2020-exam", "a4"),
+        "2020-exam-essay2": ("2020-exam", "a4"),
     }
     for qid, (slug, sid) in targets.items():
         sess = next((s for s in sessions if s["id"] == f"{slug}-{sid}"), None)
