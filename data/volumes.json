@@ -72,9 +72,9 @@
       "slug": "redo-20261109",
       "name": "错题重练 2026-11-09（跨卷 5 题）",
       "subject": "管综",
-      "papers": ["错题重练/paper.md"],
-      "answerSources": ["错题重练/答案速查.md"],
-      "answerGlobs": ["错题重练/answer*.md"],
+      "papers": ["错题重练-2026-11-09/paper.md"],
+      "answerSources": ["错题重练-2026-11-09/答案速查.md"],
+      "answerGlobs": ["错题重练-2026-11-09/answer*.md"],
       "totalQuestions": 5,
       "scorableQuestions": 5,
       "redoQuestions": [

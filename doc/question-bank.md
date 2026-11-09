@@ -270,7 +270,7 @@ python3 scripts/query.py --topic 路程 --csv > 路程错题.csv     # 给人看
 | `answerGlobs` | string[]，该卷场次文件的 glob；不写则用 `files_of()` 内置的按卷默认路径 |
 | `redoQuestions` | object[]，跨卷重练卷专用：`number` / `type` / `topic` / `origin`（原题 ID）；脚本据此生成题目，题号在本卷重编 |
 
-**跨卷重练卷**：把一次重练的错题当作独立卷处理 —— `paper.md` 逐字转录题干并注明原题 ID，`答案速查.md` 给答案，`answer<N>.md` 是场次（判定表按本卷题号 1–N）。题目 ID 形如 `redo-<日期>-qNN`，与原题是「同一道题、两个 ID」，不复用原卷 ID，避免跨卷题号错位；原卷的「待重做」台账仍单独记录重做进度。`build_index.py` 从 `answerGlobs` 发现场次、从 `redoQuestions` 生成题目、校验 `paper.md` 题号与锚点，并把该场次的 attempt 标 `isRedo: true`。
+**跨卷重练卷**：每场重练一个目录，目录名 `错题重练-<日期>/`（如 `错题重练-2026-11-09/`），把该场错题当作独立卷处理 —— `paper.md` 逐字转录题干并注明原题 ID，`答案速查.md` 给答案，`answer<N>.md` 是场次（判定表按本卷题号 1–N）。题目 ID 形如 `redo-<日期>-qNN`，与原题是「同一道题、两个 ID」，不复用原卷 ID，避免跨卷题号错位；原卷的「待重做」台账仍单独记录重做进度。`build_index.py` 从 `answerGlobs` 发现场次、从 `redoQuestions` 生成题目、校验 `paper.md` 题号与锚点，并把该场次的 attempt 标 `isRedo: true`。
 
 `paper.md` 的 front matter 只放稳定标识（`slug`、`subject`），**不放题数**——计数由 `volumes.json` 一处维护，避免第二个计数源漂移。
 
