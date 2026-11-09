@@ -747,6 +747,44 @@ v0.1 的六问已按前述分析收敛，仅剩两项需要拍板：
 
 ---
 
+## 12. 知识点体系与掌握度口径（2026-11-09 新增）
+
+### 12.1 为什么单独建一层
+
+`questions[].topic` 是**展示用的中文标签**，各卷粒度不一致：真题卷是题型板块（问题求解 / 条件充分性判断 / 逻辑推理），形式逻辑卷是卷名，数学应用题卷才是真考点。上线时共 24 个值混着三种含义，直接拿它做雷达轴或图谱节点会把「试卷章节」误当成「知识结构」。因此新增稳定 `topicId`，中文 `topic` 保留不动、`paper.md` 与判定表都不改。
+
+### 12.2 `volumes.json` 的两个新字段
+
+- `knowledgeTree`：`subjects`（4 个学科：管综数学 / 管综逻辑 / 英语二 / 中文写作）+ `nodes`（34 个节点，含 `id` / `name` / `parent` / `granularity` / `aliases`）。`id` 形如 `math.probability`、`logic.argument`，是稳定主键；`granularity` 区分 `topic`（精确到考点）与 `type`（只到题型，英语与写作暂时如此）。
+- `questionTopics`：逐题标注表，按卷 key 组织 —— `2020-exam` / `2024-exam` 各 1–55，`formal-logic-p1` / `formal-logic-p2` 各 1–15，共 140 条。**只给需要逐题判断的卷写**；数学应用题由题目 ID 里的 slug 派生，英语按 `type` 派生，专项训练二统一 `logic.conditional`，中文写作按题型派生。
+
+`topicAliases` / `mathTopics` 保留原用途（解析题号），`build_index.py` 会校验它们与知识树节点一一对应，避免两份手写表漂移。
+
+### 12.3 `index.json` 新增字段
+
+每题增加 `topicId`、`topicPath`（`[学科名, 节点名]`）、`granularity`；跨卷重练题另增 `origin`（指回原题 ID）并**继承原题的 `topicId`**。顶层新增 `knowledgeTree`（节点已补 `path`），站点只读这一个文件，不新增读取路径。以上全部由 `scripts/build_index.py` 生成，`index.json` 仍标「勿手改」。
+
+`--check` 新增校验：知识树节点 ID 唯一、parent 存在、逐题标注表覆盖 1–55 / 1–15、每题 `topicId` 有效、`topicPath` 一致、`origin` 不悬空且考点与原题相同。
+
+### 12.4 站点掌握度口径（契约）
+
+站点 `myWebsite/scripts/build/lib/topics.mjs` 按以下口径聚合，改口径须同步本节：
+
+1. **按 `origin` 归并**：重练卷题目 ID 独立，归并回原题后，同一道题的多次作答只算 1 题，防止考点样本虚高。
+2. **首做 / 最近**：同一原题按日期取最早与最后一次判定，两层对照；只统计 `scorable` 且 `correct` 为 true/false 的作答，未判定不进分母。
+3. **当前错题** = 最近一次判为错的原题数。**「连续两次做对才销账」是「待重做」台账的规则，不推广为全题库掌握度判定** —— 否则只做过一次且做对的题会被算成「未掌握」。
+4. **样本量**：题量少于阈值（站点 `site.config.json` 的 `knowledge.minSample`，默认 5）标为样本少，仍画但灰字提示；雷达轴数上限取 `maxAxes`（默认 8），其余考点在表中列出。
+5. 学科分开画图，不把英语题型与数学考点混在一张雷达里。
+
+### 12.5 维护规则
+
+- 新增卷 → 在 `volumes.json` 加卷元数据与 `questionTopics` 条目（或确认能按规则派生）→ 跑 `python3 scripts/build_index.py --check` → 重生成 `index.json` 并提交；站点构建自动读 `knowledgeTree`，**不用改 `site.config.json` 的卷清单或考点名**。
+- 调整考点归类只改 `questionTopics`，不改题干中文字段；站点显示名取自 `knowledgeTree.nodes[].name`。
+- 2026-11-09 首批标注按两份真题卷与形式逻辑两卷的题干逐题判定，回原文抽查过（2020 Q26 领导干部意见、Q27 嗅觉寻路、Q43 披毛犀；形式逻辑卷二为模态 / 量词专项），其中 5 处按题干主模型从「条件句」改判为论证推理或综合推理。标注是首版，后续订正直接改映射表即可。
+- `scripts/query.py --topic` 同时支持中文名、slug 与 `topicId`（如 `math.probability`）。
+
+---
+
 ## 附录 A：文件清单
 
 ```text

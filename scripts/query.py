@@ -43,6 +43,8 @@ def topic_matcher(term: str, aliases: dict):
     def match(q: dict) -> bool:
         if slug and f"-{slug}-" in q["id"]:
             return True
+        if term == q.get("topicId") or term in (q.get("topicPath") or []):
+            return True
         return any(term in (q.get(k) or "") for k in ("topic", "section", "id"))
 
     return match

@@ -44,6 +44,7 @@ mem/
 - **批改**：追加在原作答之后并注明日期；先列「题号 | 你的答案 | 正确答案 | 判定」，再逐题分析，最后归纳错因与下一步建议。执行细则见「批改流程」。
 - **总结**：管综用 `批改总结.md`，英语用 `试卷总结.md`，词汇用 `生词本.md`；注明统计口径（首做 / 估分标准），批改更新后同步修订。
 - **图片与 PDF**：都不提交；图片里的批改结论必须写进 Markdown，PDF 内容必须整理成 `paper.md`，不能只以原卷或照片形式存在。误提交用 `git rm --cached` 取消跟踪。
+- **知识点标注**：`data/volumes.json` 的 `knowledgeTree`（学科 → 考点，稳定 `topicId`）与 `questionTopics`（逐题映射）是知识点唯一事实源；`build_index.py` 给每题生成 `topicId` / `topicPath` / `granularity`，跨卷重练题另带 `origin` 并继承原题考点。新增卷必须补标注或确认可派生，跑 `--check` 校验覆盖；中文 `topic` 保留原样，不改题干与判定表。口径与维护规则见 `doc/question-bank.md` §12。
 - **题库索引**：`data/index.json` 由 `scripts/build_index.py` 从 Markdown 生成，标「勿手改」；`data/volumes.json` 是唯一手写的结构化文件。查询题目、错因、进度先读索引（筛选用 `python3 scripts/query.py`，支持 `--topic` / `--error-tag` / `--redo` / `--question` / `--csv`），结论必须回原文核验；题干与判定以 `paper.md` / `answer*.md` 为准，索引只是导航层，不复制题干；判定表可追加 `ID` 列（保留题号列），旧表不回填。规则见 `doc/question-bank.md`。
 - **索引同步**：改动任何被索引读取的 Markdown（题目、作答、总结、答案速查）后，必须跑 `python3 scripts/build_index.py` 并一起提交 `data/index.json`；站点统计读该 JSON，不重生成则原文页与统计脱节。改旧答卷内容不会新增场次（站点按 `answer*.md` 路径 + `time` 判定），新增或重命名 answer 文件才会变新场次。
 - **Git**：中文提交信息、动词开头（`添加…` / `批改…` / `更新…`）；一次提交只做一类事；提交前确认没有图片、PDF 和 `.DS_Store`；push 由用户明确要求后再执行。

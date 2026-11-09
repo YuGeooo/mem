@@ -248,12 +248,77 @@ def qid_math(topic: str, n: int) -> str:
     return f"math-applied-{topic}-{n:02d}"
 
 
+# ---------------------------------------------------------------- knowledge
+
+ENGLISH_TOPIC_BY_TYPE = {
+    "cloze": "english.cloze",
+    "reading": "english.reading",
+    "new-type": "english.new-type",
+    "translation": "english.translation",
+    "writing": "english.writing",
+}
+
+WRITING_TOPIC_BY_NAME = {
+    "论证有效性分析": "writing.argument-analysis",
+    "论说文": "writing.essay",
+}
+
+
+def knowledge_of(cfg: dict) -> tuple[dict, dict, list[str]]:
+    """返回 (subjects, nodes, errors)；nodes 已补 path（学科名 + 节点名）。"""
+    tree = cfg["knowledgeTree"]
+    subjects = {s["id"]: s for s in tree["subjects"]}
+    nodes: dict[str, dict] = {}
+    errors: list[str] = []
+    for node in tree["nodes"]:
+        if node["id"] in nodes:
+            errors.append(f"knowledgeTree 节点 ID 重复：{node['id']}")
+        if node["parent"] not in subjects:
+            errors.append(f"knowledgeTree 节点 {node['id']} 的 parent 不存在：{node['parent']}")
+            continue
+        item = dict(node)
+        item["path"] = [subjects[node["parent"]]["name"], node["name"]]
+        nodes[node["id"]] = item
+    for t in cfg["mathTopics"]:
+        tid = f"math.{t['topic']}"
+        if tid not in nodes:
+            errors.append(f"mathTopics.{t['topic']} 缺知识树节点 {tid}")
+    for alias, slug in cfg["topicAliases"].items():
+        tid = f"math.{slug}"
+        if tid not in nodes:
+            errors.append(f"topicAliases.{alias} 缺知识树节点 {tid}")
+    return subjects, nodes, errors
+
+
+def resolve_topic(q: dict, cfg: dict) -> str | None:
+    """按卷 / 题号映射到稳定 topicId；未覆盖返回 None，由 validate 报错。"""
+    vol, num, qid = q["volume"], q["number"], q["id"]
+    table = cfg.get("questionTopics", {})
+    if vol in ("2020-exam", "2024-exam"):
+        if q["type"] in ("essay", "writing"):
+            return WRITING_TOPIC_BY_NAME.get(q["topic"])
+        return table.get(vol, {}).get(str(num))
+    if vol == "2025-english":
+        return ENGLISH_TOPIC_BY_TYPE.get(q["type"])
+    if vol == "formal-logic":
+        m = re.match(r"formal-logic-p(\d)-q\d+", qid)
+        return table.get(f"formal-logic-p{m.group(1)}", {}).get(str(num)) if m else None
+    if vol == "reasoning-2":
+        return "logic.conditional"
+    if vol == "math-applied":
+        m = re.match(r"math-applied-(.+)-\d{2}$", qid)
+        return f"math.{m.group(1)}" if m else None
+    return None
+
+
 # ---------------------------------------------------------------- questions
 
 def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
     errors: list[str] = []
     qs: list[dict] = []
     aliases = cfg["topicAliases"]
+    _, nodes, knowledge_issues = knowledge_of(cfg)
+    errors.extend(knowledge_issues)
 
     def add(**kw):
         base = dict(
@@ -261,6 +326,12 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
             revision=None, notes=None,
         )
         base.update(kw)
+        if "topicId" not in base:
+            base["topicId"] = resolve_topic(base, cfg)
+        node = nodes.get(base["topicId"])
+        if node:
+            base["topicPath"] = node["path"]
+            base["granularity"] = node["granularity"]
         qs.append(base)
 
     a20 = answers_2020()
@@ -376,13 +447,19 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
         ans = answers_from_key(vol["answerSources"][0])
         if len(vol["redoQuestions"]) != vol["totalQuestions"]:
             errors.append(f"{slug}: redoQuestions 条数 ≠ totalQuestions")
+        by_id = {q["id"]: q for q in qs}
         for meta in vol["redoQuestions"]:
             n = meta["number"]
+            origin = meta["origin"]
+            src = by_id.get(origin)
+            if src is None:
+                errors.append(f"{slug}-q{n:02d} 的 origin 悬空：{origin}")
             add(id=f"{slug}-q{n:02d}", volume=slug, paper=vol["papers"][0],
                 number=n, section="错题重练", topic=meta["topic"], type=meta["type"],
                 answer=ans.get(n), answerSource=vol["answerSources"][0],
                 source=f"{vol['papers'][0]}#{slug}-q{n:02d}",
-                notes=f"原题 {meta['origin']}")
+                topicId=src["topicId"] if src else None, origin=origin,
+                notes=f"原题 {origin}")
     return qs, errors
 
 
@@ -729,6 +806,37 @@ def validate(cfg: dict, questions: list[dict], sessions: list[dict],
             errors.append(f"{q['id']} 缺 answerSource")
         if not q["source"]:
             errors.append(f"{q['id']} 缺 source 回指")
+
+    _, nodes, _ = knowledge_of(cfg)
+    table = cfg.get("questionTopics", {})
+    for key, mapping in table.items():
+        for num, tid in mapping.items():
+            if tid not in nodes:
+                errors.append(f"questionTopics.{key}.{num} 标签不存在：{tid}")
+    for vol in ("2020-exam", "2024-exam"):
+        missing = [n for n in range(1, 56) if str(n) not in table.get(vol, {})]
+        if missing:
+            errors.append(f"questionTopics.{vol} 缺题号：{missing}")
+    for key in ("formal-logic-p1", "formal-logic-p2"):
+        missing = [n for n in range(1, 16) if str(n) not in table.get(key, {})]
+        if missing:
+            errors.append(f"questionTopics.{key} 缺题号：{missing}")
+    for q in questions:
+        tid = q.get("topicId")
+        if not tid:
+            errors.append(f"{q['id']} 缺 topicId")
+            continue
+        if tid not in nodes:
+            errors.append(f"{q['id']} topicId 不在知识树：{tid}")
+        elif q.get("topicPath") != nodes[tid]["path"]:
+            errors.append(f"{q['id']} topicPath 与知识树不一致")
+        origin = q.get("origin")
+        if origin:
+            src = qmap.get(origin)
+            if src is None:
+                errors.append(f"{q['id']} origin 悬空：{origin}")
+            elif src.get("topicId") != tid:
+                errors.append(f"{q['id']} 与原题 {origin} 的考点不一致")
     ids = set(qmap)
     for a in attempts:
         if a["questionId"] not in ids:
@@ -769,6 +877,9 @@ def report(cfg: dict, questions: list[dict], sessions: list[dict], attempts: lis
         f"redo rows: {len(redo)}/12 mapped",
         f"anchors: {sum(1 for q in questions if '#' in q['source'])}/{len(questions)} verified",
         f"answer overrides: {sum(len(v.get('answerOverrides', {})) for v in cfg['volumes'])}（volumes.json 显式订正，原文保留）",
+        f"knowledge: {len(cfg['knowledgeTree']['nodes'])} 节点 / "
+        f"{sum(1 for q in questions if q.get('topicId'))}/{len(questions)} 题已标注 / "
+        f"{sum(1 for q in questions if q.get('origin'))} 题有 origin",
     ]
     for vol in cfg["volumes"]:
         n = sum(1 for q in questions if q["volume"] == vol["slug"])
@@ -810,6 +921,7 @@ def main() -> int:
         return 1
 
     now = datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
+    _, knowledge_nodes, _ = knowledge_of(cfg)
     index = {
         "meta": {
             "generatedAt": now,
@@ -824,6 +936,12 @@ def main() -> int:
             "timing": {m: sum(1 for s in sessions if s["timingMode"] == m)
                        for m in ("session", "per-question", "mixed", "none")},
             "errors": [],
+        },
+        "knowledgeTree": {
+            "version": cfg["knowledgeTree"]["version"],
+            "subjects": cfg["knowledgeTree"]["subjects"],
+            "nodes": [knowledge_nodes[n["id"]] for n in cfg["knowledgeTree"]["nodes"]
+                      if n["id"] in knowledge_nodes],
         },
         "questions": questions,
         "sessions": sessions,

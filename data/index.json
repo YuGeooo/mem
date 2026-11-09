@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-09T22:47:35+08:00",
+    "generatedAt": "2026-11-09T23:47:46+08:00",
     "generator": "scripts/build_index.py",
     "sourceFiles": 54,
     "coverage": {
@@ -17,6 +17,493 @@
     },
     "errors": []
   },
+  "knowledgeTree": {
+    "version": 1,
+    "subjects": [
+      {
+        "id": "math",
+        "name": "管综数学",
+        "exam": "管综"
+      },
+      {
+        "id": "logic",
+        "name": "管综逻辑",
+        "exam": "管综"
+      },
+      {
+        "id": "english",
+        "name": "英语二",
+        "exam": "英语"
+      },
+      {
+        "id": "writing",
+        "name": "中文写作",
+        "exam": "管综"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "math.profit",
+        "name": "商品利润",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "利润",
+          "profit"
+        ],
+        "path": [
+          "管综数学",
+          "商品利润"
+        ]
+      },
+      {
+        "id": "math.distance",
+        "name": "路程问题",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "路程",
+          "distance"
+        ],
+        "path": [
+          "管综数学",
+          "路程问题"
+        ]
+      },
+      {
+        "id": "math.engineering",
+        "name": "工程问题",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "工程",
+          "engineering"
+        ],
+        "path": [
+          "管综数学",
+          "工程问题"
+        ]
+      },
+      {
+        "id": "math.cross-ratio",
+        "name": "交叉比例法",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "交叉",
+          "cross-ratio"
+        ],
+        "path": [
+          "管综数学",
+          "交叉比例法"
+        ]
+      },
+      {
+        "id": "math.concentration",
+        "name": "溶液浓度",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "浓度",
+          "concentration"
+        ],
+        "path": [
+          "管综数学",
+          "溶液浓度"
+        ]
+      },
+      {
+        "id": "math.tiered-pricing",
+        "name": "分段计费",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "分段",
+          "tiered-pricing"
+        ],
+        "path": [
+          "管综数学",
+          "分段计费"
+        ]
+      },
+      {
+        "id": "math.sets",
+        "name": "集合",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "集合",
+          "sets"
+        ],
+        "path": [
+          "管综数学",
+          "集合"
+        ]
+      },
+      {
+        "id": "math.diophantine",
+        "name": "不定方程",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "不定方程",
+          "diophantine"
+        ],
+        "path": [
+          "管综数学",
+          "不定方程"
+        ]
+      },
+      {
+        "id": "math.linear-programming",
+        "name": "线性规划",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "线规",
+          "linear-programming"
+        ],
+        "path": [
+          "管综数学",
+          "线性规划"
+        ]
+      },
+      {
+        "id": "math.at-least-at-most",
+        "name": "至少至多",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "至少至多",
+          "at-least-at-most"
+        ],
+        "path": [
+          "管综数学",
+          "至少至多"
+        ]
+      },
+      {
+        "id": "math.probability",
+        "name": "概率",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "概率",
+          "probability"
+        ],
+        "path": [
+          "管综数学",
+          "概率"
+        ]
+      },
+      {
+        "id": "math.combinatorics",
+        "name": "排列组合",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "排列组合",
+          "combinatorics"
+        ],
+        "path": [
+          "管综数学",
+          "排列组合"
+        ]
+      },
+      {
+        "id": "math.geometry",
+        "name": "平面几何",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "平面几何",
+          "geometry"
+        ],
+        "path": [
+          "管综数学",
+          "平面几何"
+        ]
+      },
+      {
+        "id": "math.analytic-geometry",
+        "name": "解析几何",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "解析几何",
+          "analytic-geometry"
+        ],
+        "path": [
+          "管综数学",
+          "解析几何"
+        ]
+      },
+      {
+        "id": "math.solid-geometry",
+        "name": "立体几何",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "立体几何",
+          "solid-geometry"
+        ],
+        "path": [
+          "管综数学",
+          "立体几何"
+        ]
+      },
+      {
+        "id": "math.sequence",
+        "name": "数列",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "数列",
+          "sequence"
+        ],
+        "path": [
+          "管综数学",
+          "数列"
+        ]
+      },
+      {
+        "id": "math.algebra",
+        "name": "代数与方程",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "代数",
+          "方程",
+          "algebra"
+        ],
+        "path": [
+          "管综数学",
+          "代数与方程"
+        ]
+      },
+      {
+        "id": "math.number-theory",
+        "name": "整数与整除",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "整数",
+          "整除",
+          "number-theory"
+        ],
+        "path": [
+          "管综数学",
+          "整数与整除"
+        ]
+      },
+      {
+        "id": "math.ratio",
+        "name": "比例与百分比",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "比例",
+          "百分比",
+          "ratio"
+        ],
+        "path": [
+          "管综数学",
+          "比例与百分比"
+        ]
+      },
+      {
+        "id": "math.average",
+        "name": "平均数",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "平均数",
+          "average"
+        ],
+        "path": [
+          "管综数学",
+          "平均数"
+        ]
+      },
+      {
+        "id": "math.inequality",
+        "name": "不等式与最值",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [
+          "不等式",
+          "最值",
+          "inequality"
+        ],
+        "path": [
+          "管综数学",
+          "不等式与最值"
+        ]
+      },
+      {
+        "id": "math.other",
+        "name": "其他数学",
+        "parent": "math",
+        "granularity": "topic",
+        "aliases": [],
+        "path": [
+          "管综数学",
+          "其他数学"
+        ]
+      },
+      {
+        "id": "logic.formal",
+        "name": "形式逻辑",
+        "parent": "logic",
+        "granularity": "topic",
+        "aliases": [
+          "条件命题",
+          "模态",
+          "量词"
+        ],
+        "path": [
+          "管综逻辑",
+          "形式逻辑"
+        ]
+      },
+      {
+        "id": "logic.argument",
+        "name": "论证推理",
+        "parent": "logic",
+        "granularity": "topic",
+        "aliases": [
+          "削弱",
+          "支持",
+          "假设"
+        ],
+        "path": [
+          "管综逻辑",
+          "论证推理"
+        ]
+      },
+      {
+        "id": "logic.reasoning",
+        "name": "综合推理",
+        "parent": "logic",
+        "granularity": "topic",
+        "aliases": [
+          "排列匹配",
+          "真假话"
+        ],
+        "path": [
+          "管综逻辑",
+          "综合推理"
+        ]
+      },
+      {
+        "id": "logic.conditional",
+        "name": "条件类推理",
+        "parent": "logic",
+        "granularity": "topic",
+        "aliases": [
+          "五大条件类"
+        ],
+        "path": [
+          "管综逻辑",
+          "条件类推理"
+        ]
+      },
+      {
+        "id": "logic.other",
+        "name": "其他逻辑",
+        "parent": "logic",
+        "granularity": "topic",
+        "aliases": [],
+        "path": [
+          "管综逻辑",
+          "其他逻辑"
+        ]
+      },
+      {
+        "id": "english.cloze",
+        "name": "完形填空",
+        "parent": "english",
+        "granularity": "type",
+        "aliases": [
+          "完形"
+        ],
+        "path": [
+          "英语二",
+          "完形填空"
+        ]
+      },
+      {
+        "id": "english.reading",
+        "name": "阅读理解",
+        "parent": "english",
+        "granularity": "type",
+        "aliases": [
+          "阅读"
+        ],
+        "path": [
+          "英语二",
+          "阅读理解"
+        ]
+      },
+      {
+        "id": "english.new-type",
+        "name": "新题型",
+        "parent": "english",
+        "granularity": "type",
+        "aliases": [
+          "小标题匹配"
+        ],
+        "path": [
+          "英语二",
+          "新题型"
+        ]
+      },
+      {
+        "id": "english.translation",
+        "name": "翻译",
+        "parent": "english",
+        "granularity": "type",
+        "aliases": [],
+        "path": [
+          "英语二",
+          "翻译"
+        ]
+      },
+      {
+        "id": "english.writing",
+        "name": "英语写作",
+        "parent": "english",
+        "granularity": "type",
+        "aliases": [],
+        "path": [
+          "英语二",
+          "英语写作"
+        ]
+      },
+      {
+        "id": "writing.argument-analysis",
+        "name": "论证有效性分析",
+        "parent": "writing",
+        "granularity": "type",
+        "aliases": [],
+        "path": [
+          "中文写作",
+          "论证有效性分析"
+        ]
+      },
+      {
+        "id": "writing.essay",
+        "name": "论说文",
+        "parent": "writing",
+        "granularity": "type",
+        "aliases": [],
+        "path": [
+          "中文写作",
+          "论说文"
+        ]
+      }
+    ]
+  },
   "questions": [
     {
       "answer": "D",
@@ -32,7 +519,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q001"
+      "source": "2020年管综合真题/paper.md#2020-exam-q001",
+      "topicId": "math.ratio",
+      "topicPath": [
+        "管综数学",
+        "比例与百分比"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -48,7 +541,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q002"
+      "source": "2020年管综合真题/paper.md#2020-exam-q002",
+      "topicId": "math.sets",
+      "topicPath": [
+        "管综数学",
+        "集合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -64,7 +563,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q003"
+      "source": "2020年管综合真题/paper.md#2020-exam-q003",
+      "topicId": "math.average",
+      "topicPath": [
+        "管综数学",
+        "平均数"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -80,7 +585,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q004"
+      "source": "2020年管综合真题/paper.md#2020-exam-q004",
+      "topicId": "math.probability",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -96,7 +607,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q005"
+      "source": "2020年管综合真题/paper.md#2020-exam-q005",
+      "topicId": "math.sequence",
+      "topicPath": [
+        "管综数学",
+        "数列"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -112,7 +629,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q006"
+      "source": "2020年管综合真题/paper.md#2020-exam-q006",
+      "topicId": "math.algebra",
+      "topicPath": [
+        "管综数学",
+        "代数与方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -128,7 +651,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q007"
+      "source": "2020年管综合真题/paper.md#2020-exam-q007",
+      "topicId": "math.analytic-geometry",
+      "topicPath": [
+        "管综数学",
+        "解析几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -144,7 +673,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q008"
+      "source": "2020年管综合真题/paper.md#2020-exam-q008",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -160,7 +695,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q009"
+      "source": "2020年管综合真题/paper.md#2020-exam-q009",
+      "topicId": "math.ratio",
+      "topicPath": [
+        "管综数学",
+        "比例与百分比"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -176,7 +717,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q010"
+      "source": "2020年管综合真题/paper.md#2020-exam-q010",
+      "topicId": "math.geometry",
+      "topicPath": [
+        "管综数学",
+        "平面几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -192,7 +739,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q011"
+      "source": "2020年管综合真题/paper.md#2020-exam-q011",
+      "topicId": "math.sequence",
+      "topicPath": [
+        "管综数学",
+        "数列"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -208,7 +761,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q012"
+      "source": "2020年管综合真题/paper.md#2020-exam-q012",
+      "topicId": "math.geometry",
+      "topicPath": [
+        "管综数学",
+        "平面几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -224,7 +783,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q013"
+      "source": "2020年管综合真题/paper.md#2020-exam-q013",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -240,7 +805,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q014"
+      "source": "2020年管综合真题/paper.md#2020-exam-q014",
+      "topicId": "math.probability",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -256,7 +827,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2020年管综合真题/paper.md#2020-exam-q015"
+      "source": "2020年管综合真题/paper.md#2020-exam-q015",
+      "topicId": "math.combinatorics",
+      "topicPath": [
+        "管综数学",
+        "排列组合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -272,7 +849,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q016"
+      "source": "2020年管综合真题/paper.md#2020-exam-q016",
+      "topicId": "math.geometry",
+      "topicPath": [
+        "管综数学",
+        "平面几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -288,7 +871,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q017"
+      "source": "2020年管综合真题/paper.md#2020-exam-q017",
+      "topicId": "math.analytic-geometry",
+      "topicPath": [
+        "管综数学",
+        "解析几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -304,7 +893,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q018"
+      "source": "2020年管综合真题/paper.md#2020-exam-q018",
+      "topicId": "math.average",
+      "topicPath": [
+        "管综数学",
+        "平均数"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -320,7 +915,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q019"
+      "source": "2020年管综合真题/paper.md#2020-exam-q019",
+      "topicId": "math.probability",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -336,7 +937,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q020"
+      "source": "2020年管综合真题/paper.md#2020-exam-q020",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -352,7 +959,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q021"
+      "source": "2020年管综合真题/paper.md#2020-exam-q021",
+      "topicId": "math.solid-geometry",
+      "topicPath": [
+        "管综数学",
+        "立体几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -368,7 +981,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q022"
+      "source": "2020年管综合真题/paper.md#2020-exam-q022",
+      "topicId": "math.number-theory",
+      "topicPath": [
+        "管综数学",
+        "整数与整除"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -384,7 +1003,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q023"
+      "source": "2020年管综合真题/paper.md#2020-exam-q023",
+      "topicId": "math.algebra",
+      "topicPath": [
+        "管综数学",
+        "代数与方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -400,7 +1025,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q024"
+      "source": "2020年管综合真题/paper.md#2020-exam-q024",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -416,7 +1047,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2020年管综合真题/paper.md#2020-exam-q025"
+      "source": "2020年管综合真题/paper.md#2020-exam-q025",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -432,7 +1069,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q026"
+      "source": "2020年管综合真题/paper.md#2020-exam-q026",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -448,7 +1091,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q027"
+      "source": "2020年管综合真题/paper.md#2020-exam-q027",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -464,7 +1113,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q028"
+      "source": "2020年管综合真题/paper.md#2020-exam-q028",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -480,7 +1135,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q029"
+      "source": "2020年管综合真题/paper.md#2020-exam-q029",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -496,7 +1157,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q030"
+      "source": "2020年管综合真题/paper.md#2020-exam-q030",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -512,7 +1179,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q031"
+      "source": "2020年管综合真题/paper.md#2020-exam-q031",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -528,7 +1201,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q032"
+      "source": "2020年管综合真题/paper.md#2020-exam-q032",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -544,7 +1223,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q033"
+      "source": "2020年管综合真题/paper.md#2020-exam-q033",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -560,7 +1245,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q034"
+      "source": "2020年管综合真题/paper.md#2020-exam-q034",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -576,7 +1267,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q035"
+      "source": "2020年管综合真题/paper.md#2020-exam-q035",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -592,7 +1289,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q036"
+      "source": "2020年管综合真题/paper.md#2020-exam-q036",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -608,7 +1311,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q037"
+      "source": "2020年管综合真题/paper.md#2020-exam-q037",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -624,7 +1333,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q038"
+      "source": "2020年管综合真题/paper.md#2020-exam-q038",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -640,7 +1355,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q039"
+      "source": "2020年管综合真题/paper.md#2020-exam-q039",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -656,7 +1377,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q040"
+      "source": "2020年管综合真题/paper.md#2020-exam-q040",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -672,7 +1399,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q041"
+      "source": "2020年管综合真题/paper.md#2020-exam-q041",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -688,7 +1421,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q042"
+      "source": "2020年管综合真题/paper.md#2020-exam-q042",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -704,7 +1443,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q043"
+      "source": "2020年管综合真题/paper.md#2020-exam-q043",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -720,7 +1465,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q044"
+      "source": "2020年管综合真题/paper.md#2020-exam-q044",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -736,7 +1487,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q045"
+      "source": "2020年管综合真题/paper.md#2020-exam-q045",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -752,7 +1509,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q046"
+      "source": "2020年管综合真题/paper.md#2020-exam-q046",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -768,7 +1531,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q047"
+      "source": "2020年管综合真题/paper.md#2020-exam-q047",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -784,7 +1553,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q048"
+      "source": "2020年管综合真题/paper.md#2020-exam-q048",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -800,7 +1575,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q049"
+      "source": "2020年管综合真题/paper.md#2020-exam-q049",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -816,7 +1597,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q050"
+      "source": "2020年管综合真题/paper.md#2020-exam-q050",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -832,7 +1619,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q051"
+      "source": "2020年管综合真题/paper.md#2020-exam-q051",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -848,7 +1641,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q052"
+      "source": "2020年管综合真题/paper.md#2020-exam-q052",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -864,7 +1663,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q053"
+      "source": "2020年管综合真题/paper.md#2020-exam-q053",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -880,7 +1685,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q054"
+      "source": "2020年管综合真题/paper.md#2020-exam-q054",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -896,7 +1707,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2020年管综合真题/paper.md#2020-exam-q055"
+      "source": "2020年管综合真题/paper.md#2020-exam-q055",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": null,
@@ -912,7 +1729,13 @@
       "section": "四、写作",
       "topic": "论证有效性分析",
       "type": "essay",
-      "source": "2020年管综合真题/paper.md#2020-exam-essay1"
+      "source": "2020年管综合真题/paper.md#2020-exam-essay1",
+      "topicId": "writing.argument-analysis",
+      "topicPath": [
+        "中文写作",
+        "论证有效性分析"
+      ],
+      "granularity": "type"
     },
     {
       "answer": null,
@@ -928,7 +1751,13 @@
       "section": "四、写作",
       "topic": "论说文",
       "type": "writing",
-      "source": "2020年管综合真题/paper.md#2020-exam-essay2"
+      "source": "2020年管综合真题/paper.md#2020-exam-essay2",
+      "topicId": "writing.essay",
+      "topicPath": [
+        "中文写作",
+        "论说文"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "E",
@@ -944,7 +1773,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q001"
+      "source": "2024年管综真题/paper.md#2024-exam-q001",
+      "topicId": "math.ratio",
+      "topicPath": [
+        "管综数学",
+        "比例与百分比"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -960,7 +1795,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q002"
+      "source": "2024年管综真题/paper.md#2024-exam-q002",
+      "topicId": "math.probability",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -976,7 +1817,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q003"
+      "source": "2024年管综真题/paper.md#2024-exam-q003",
+      "topicId": "math.sequence",
+      "topicPath": [
+        "管综数学",
+        "数列"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -992,7 +1839,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q004"
+      "source": "2024年管综真题/paper.md#2024-exam-q004",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1008,7 +1861,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q005"
+      "source": "2024年管综真题/paper.md#2024-exam-q005",
+      "topicId": "math.analytic-geometry",
+      "topicPath": [
+        "管综数学",
+        "解析几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1024,7 +1883,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q006"
+      "source": "2024年管综真题/paper.md#2024-exam-q006",
+      "topicId": "math.sequence",
+      "topicPath": [
+        "管综数学",
+        "数列"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1040,7 +1905,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q007"
+      "source": "2024年管综真题/paper.md#2024-exam-q007",
+      "topicId": "math.combinatorics",
+      "topicPath": [
+        "管综数学",
+        "排列组合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1056,7 +1927,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q008"
+      "source": "2024年管综真题/paper.md#2024-exam-q008",
+      "topicId": "math.geometry",
+      "topicPath": [
+        "管综数学",
+        "平面几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1072,7 +1949,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q009"
+      "source": "2024年管综真题/paper.md#2024-exam-q009",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1088,7 +1971,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q010"
+      "source": "2024年管综真题/paper.md#2024-exam-q010",
+      "topicId": "math.sequence",
+      "topicPath": [
+        "管综数学",
+        "数列"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1104,7 +1993,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q011"
+      "source": "2024年管综真题/paper.md#2024-exam-q011",
+      "topicId": "math.geometry",
+      "topicPath": [
+        "管综数学",
+        "平面几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1120,7 +2015,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q012"
+      "source": "2024年管综真题/paper.md#2024-exam-q012",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1136,7 +2037,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q013"
+      "source": "2024年管综真题/paper.md#2024-exam-q013",
+      "topicId": "math.solid-geometry",
+      "topicPath": [
+        "管综数学",
+        "立体几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1152,7 +2059,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q014"
+      "source": "2024年管综真题/paper.md#2024-exam-q014",
+      "topicId": "math.probability",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1168,7 +2081,13 @@
       "section": "一、问题求解",
       "topic": "问题求解",
       "type": "problem",
-      "source": "2024年管综真题/paper.md#2024-exam-q015"
+      "source": "2024年管综真题/paper.md#2024-exam-q015",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1184,7 +2103,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q016"
+      "source": "2024年管综真题/paper.md#2024-exam-q016",
+      "topicId": "math.probability",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1200,7 +2125,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q017"
+      "source": "2024年管综真题/paper.md#2024-exam-q017",
+      "topicId": "math.number-theory",
+      "topicPath": [
+        "管综数学",
+        "整数与整除"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1216,7 +2147,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q018"
+      "source": "2024年管综真题/paper.md#2024-exam-q018",
+      "topicId": "math.algebra",
+      "topicPath": [
+        "管综数学",
+        "代数与方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1232,7 +2169,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q019"
+      "source": "2024年管综真题/paper.md#2024-exam-q019",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1248,7 +2191,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q020"
+      "source": "2024年管综真题/paper.md#2024-exam-q020",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1264,7 +2213,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q021"
+      "source": "2024年管综真题/paper.md#2024-exam-q021",
+      "topicId": "math.inequality",
+      "topicPath": [
+        "管综数学",
+        "不等式与最值"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1280,7 +2235,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q022"
+      "source": "2024年管综真题/paper.md#2024-exam-q022",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1296,7 +2257,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q023"
+      "source": "2024年管综真题/paper.md#2024-exam-q023",
+      "topicId": "math.analytic-geometry",
+      "topicPath": [
+        "管综数学",
+        "解析几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1312,7 +2279,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q024"
+      "source": "2024年管综真题/paper.md#2024-exam-q024",
+      "topicId": "math.algebra",
+      "topicPath": [
+        "管综数学",
+        "代数与方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1332,7 +2305,13 @@
       "section": "二、条件充分性判断",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "2024年管综真题/paper.md#2024-exam-q025"
+      "source": "2024年管综真题/paper.md#2024-exam-q025",
+      "topicId": "math.sequence",
+      "topicPath": [
+        "管综数学",
+        "数列"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1348,7 +2327,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q026"
+      "source": "2024年管综真题/paper.md#2024-exam-q026",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1364,7 +2349,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q027"
+      "source": "2024年管综真题/paper.md#2024-exam-q027",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1380,7 +2371,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q028"
+      "source": "2024年管综真题/paper.md#2024-exam-q028",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1396,7 +2393,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q029"
+      "source": "2024年管综真题/paper.md#2024-exam-q029",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1412,7 +2415,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q030"
+      "source": "2024年管综真题/paper.md#2024-exam-q030",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1428,7 +2437,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q031"
+      "source": "2024年管综真题/paper.md#2024-exam-q031",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1444,7 +2459,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q032"
+      "source": "2024年管综真题/paper.md#2024-exam-q032",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1460,7 +2481,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q033"
+      "source": "2024年管综真题/paper.md#2024-exam-q033",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1476,7 +2503,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q034"
+      "source": "2024年管综真题/paper.md#2024-exam-q034",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1492,7 +2525,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q035"
+      "source": "2024年管综真题/paper.md#2024-exam-q035",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1508,7 +2547,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q036"
+      "source": "2024年管综真题/paper.md#2024-exam-q036",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1524,7 +2569,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q037"
+      "source": "2024年管综真题/paper.md#2024-exam-q037",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1540,7 +2591,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q038"
+      "source": "2024年管综真题/paper.md#2024-exam-q038",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1556,7 +2613,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q039"
+      "source": "2024年管综真题/paper.md#2024-exam-q039",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1572,7 +2635,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q040"
+      "source": "2024年管综真题/paper.md#2024-exam-q040",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1588,7 +2657,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q041"
+      "source": "2024年管综真题/paper.md#2024-exam-q041",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1604,7 +2679,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q042"
+      "source": "2024年管综真题/paper.md#2024-exam-q042",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1620,7 +2701,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q043"
+      "source": "2024年管综真题/paper.md#2024-exam-q043",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1636,7 +2723,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q044"
+      "source": "2024年管综真题/paper.md#2024-exam-q044",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1652,7 +2745,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q045"
+      "source": "2024年管综真题/paper.md#2024-exam-q045",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1668,7 +2767,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q046"
+      "source": "2024年管综真题/paper.md#2024-exam-q046",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1684,7 +2789,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q047"
+      "source": "2024年管综真题/paper.md#2024-exam-q047",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1700,7 +2811,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q048"
+      "source": "2024年管综真题/paper.md#2024-exam-q048",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -1716,7 +2833,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q049"
+      "source": "2024年管综真题/paper.md#2024-exam-q049",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -1732,7 +2855,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q050"
+      "source": "2024年管综真题/paper.md#2024-exam-q050",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -1748,7 +2877,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q051"
+      "source": "2024年管综真题/paper.md#2024-exam-q051",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1764,7 +2899,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q052"
+      "source": "2024年管综真题/paper.md#2024-exam-q052",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1780,7 +2921,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q053"
+      "source": "2024年管综真题/paper.md#2024-exam-q053",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -1796,7 +2943,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q054"
+      "source": "2024年管综真题/paper.md#2024-exam-q054",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -1812,7 +2965,13 @@
       "section": "三、逻辑推理",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "2024年管综真题/paper.md#2024-exam-q055"
+      "source": "2024年管综真题/paper.md#2024-exam-q055",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": null,
@@ -1828,7 +2987,13 @@
       "section": "四、写作",
       "topic": "论证有效性分析",
       "type": "essay",
-      "source": "2024年管综真题/paper.md#2024-exam-essay1"
+      "source": "2024年管综真题/paper.md#2024-exam-essay1",
+      "topicId": "writing.argument-analysis",
+      "topicPath": [
+        "中文写作",
+        "论证有效性分析"
+      ],
+      "granularity": "type"
     },
     {
       "answer": null,
@@ -1844,7 +3009,13 @@
       "section": "四、写作",
       "topic": "论说文",
       "type": "writing",
-      "source": "2024年管综真题/paper.md#2024-exam-essay2"
+      "source": "2024年管综真题/paper.md#2024-exam-essay2",
+      "topicId": "writing.essay",
+      "topicPath": [
+        "中文写作",
+        "论说文"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -1860,7 +3031,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q001"
+      "source": "2025年英语二/paper.md#2025-english-q001",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -1876,7 +3053,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q002"
+      "source": "2025年英语二/paper.md#2025-english-q002",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -1892,7 +3075,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q003"
+      "source": "2025年英语二/paper.md#2025-english-q003",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -1908,7 +3097,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q004"
+      "source": "2025年英语二/paper.md#2025-english-q004",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -1924,7 +3119,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q005"
+      "source": "2025年英语二/paper.md#2025-english-q005",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -1940,7 +3141,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q006"
+      "source": "2025年英语二/paper.md#2025-english-q006",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -1956,7 +3163,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q007"
+      "source": "2025年英语二/paper.md#2025-english-q007",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -1972,7 +3185,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q008"
+      "source": "2025年英语二/paper.md#2025-english-q008",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -1988,7 +3207,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q009"
+      "source": "2025年英语二/paper.md#2025-english-q009",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2004,7 +3229,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q010"
+      "source": "2025年英语二/paper.md#2025-english-q010",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2020,7 +3251,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q011"
+      "source": "2025年英语二/paper.md#2025-english-q011",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2036,7 +3273,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q012"
+      "source": "2025年英语二/paper.md#2025-english-q012",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2052,7 +3295,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q013"
+      "source": "2025年英语二/paper.md#2025-english-q013",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2068,7 +3317,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q014"
+      "source": "2025年英语二/paper.md#2025-english-q014",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2084,7 +3339,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q015"
+      "source": "2025年英语二/paper.md#2025-english-q015",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2100,7 +3361,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q016"
+      "source": "2025年英语二/paper.md#2025-english-q016",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2116,7 +3383,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q017"
+      "source": "2025年英语二/paper.md#2025-english-q017",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2132,7 +3405,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q018"
+      "source": "2025年英语二/paper.md#2025-english-q018",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2148,7 +3427,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q019"
+      "source": "2025年英语二/paper.md#2025-english-q019",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2164,7 +3449,13 @@
       "section": "Section I 完形填空",
       "topic": "完形填空",
       "type": "cloze",
-      "source": "2025年英语二/paper.md#2025-english-q020"
+      "source": "2025年英语二/paper.md#2025-english-q020",
+      "topicId": "english.cloze",
+      "topicPath": [
+        "英语二",
+        "完形填空"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2180,7 +3471,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q021"
+      "source": "2025年英语二/paper.md#2025-english-q021",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2196,7 +3493,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q022"
+      "source": "2025年英语二/paper.md#2025-english-q022",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2212,7 +3515,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q023"
+      "source": "2025年英语二/paper.md#2025-english-q023",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2228,7 +3537,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q024"
+      "source": "2025年英语二/paper.md#2025-english-q024",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2244,7 +3559,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q025"
+      "source": "2025年英语二/paper.md#2025-english-q025",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2260,7 +3581,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q026"
+      "source": "2025年英语二/paper.md#2025-english-q026",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2276,7 +3603,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q027"
+      "source": "2025年英语二/paper.md#2025-english-q027",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2292,7 +3625,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q028"
+      "source": "2025年英语二/paper.md#2025-english-q028",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2308,7 +3647,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q029"
+      "source": "2025年英语二/paper.md#2025-english-q029",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2324,7 +3669,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q030"
+      "source": "2025年英语二/paper.md#2025-english-q030",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2340,7 +3691,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q031"
+      "source": "2025年英语二/paper.md#2025-english-q031",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2356,7 +3713,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q032"
+      "source": "2025年英语二/paper.md#2025-english-q032",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2372,7 +3735,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q033"
+      "source": "2025年英语二/paper.md#2025-english-q033",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2388,7 +3757,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q034"
+      "source": "2025年英语二/paper.md#2025-english-q034",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2404,7 +3779,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q035"
+      "source": "2025年英语二/paper.md#2025-english-q035",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2420,7 +3801,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q036"
+      "source": "2025年英语二/paper.md#2025-english-q036",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2436,7 +3823,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q037"
+      "source": "2025年英语二/paper.md#2025-english-q037",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2452,7 +3845,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q038"
+      "source": "2025年英语二/paper.md#2025-english-q038",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2468,7 +3867,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q039"
+      "source": "2025年英语二/paper.md#2025-english-q039",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "D",
@@ -2484,7 +3889,13 @@
       "section": "Section II Part A 阅读",
       "topic": "阅读理解",
       "type": "reading",
-      "source": "2025年英语二/paper.md#2025-english-q040"
+      "source": "2025年英语二/paper.md#2025-english-q040",
+      "topicId": "english.reading",
+      "topicPath": [
+        "英语二",
+        "阅读理解"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "F",
@@ -2500,7 +3911,13 @@
       "section": "Section II Part B",
       "topic": "小标题匹配",
       "type": "new-type",
-      "source": "2025年英语二/paper.md#2025-english-q041"
+      "source": "2025年英语二/paper.md#2025-english-q041",
+      "topicId": "english.new-type",
+      "topicPath": [
+        "英语二",
+        "新题型"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "C",
@@ -2516,7 +3933,13 @@
       "section": "Section II Part B",
       "topic": "小标题匹配",
       "type": "new-type",
-      "source": "2025年英语二/paper.md#2025-english-q042"
+      "source": "2025年英语二/paper.md#2025-english-q042",
+      "topicId": "english.new-type",
+      "topicPath": [
+        "英语二",
+        "新题型"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "G",
@@ -2532,7 +3955,13 @@
       "section": "Section II Part B",
       "topic": "小标题匹配",
       "type": "new-type",
-      "source": "2025年英语二/paper.md#2025-english-q043"
+      "source": "2025年英语二/paper.md#2025-english-q043",
+      "topicId": "english.new-type",
+      "topicPath": [
+        "英语二",
+        "新题型"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "B",
@@ -2548,7 +3977,13 @@
       "section": "Section II Part B",
       "topic": "小标题匹配",
       "type": "new-type",
-      "source": "2025年英语二/paper.md#2025-english-q044"
+      "source": "2025年英语二/paper.md#2025-english-q044",
+      "topicId": "english.new-type",
+      "topicPath": [
+        "英语二",
+        "新题型"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "A",
@@ -2564,7 +3999,13 @@
       "section": "Section II Part B",
       "topic": "小标题匹配",
       "type": "new-type",
-      "source": "2025年英语二/paper.md#2025-english-q045"
+      "source": "2025年英语二/paper.md#2025-english-q045",
+      "topicId": "english.new-type",
+      "topicPath": [
+        "英语二",
+        "新题型"
+      ],
+      "granularity": "type"
     },
     {
       "answer": null,
@@ -2580,7 +4021,13 @@
       "section": "Section III/IV 主观题",
       "topic": "翻译",
       "type": "translation",
-      "source": "2025年英语二/paper.md#2025-english-translation"
+      "source": "2025年英语二/paper.md#2025-english-translation",
+      "topicId": "english.translation",
+      "topicPath": [
+        "英语二",
+        "翻译"
+      ],
+      "granularity": "type"
     },
     {
       "answer": null,
@@ -2596,7 +4043,13 @@
       "section": "Section III/IV 主观题",
       "topic": "写作 Part A",
       "type": "writing",
-      "source": "2025年英语二/paper.md#2025-english-writing-a"
+      "source": "2025年英语二/paper.md#2025-english-writing-a",
+      "topicId": "english.writing",
+      "topicPath": [
+        "英语二",
+        "英语写作"
+      ],
+      "granularity": "type"
     },
     {
       "answer": null,
@@ -2612,7 +4065,13 @@
       "section": "Section III/IV 主观题",
       "topic": "写作 Part B",
       "type": "writing",
-      "source": "2025年英语二/paper.md#2025-english-writing-b"
+      "source": "2025年英语二/paper.md#2025-english-writing-b",
+      "topicId": "english.writing",
+      "topicPath": [
+        "英语二",
+        "英语写作"
+      ],
+      "granularity": "type"
     },
     {
       "answer": "E",
@@ -2628,7 +4087,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q01"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q01",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -2644,7 +4109,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q02"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q02",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -2660,7 +4131,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q03"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q03",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -2676,7 +4153,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q04"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q04",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -2692,7 +4175,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q05"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q05",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2708,7 +4197,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q06"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q06",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2724,7 +4219,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q07"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q07",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2740,7 +4241,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q08"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q08",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2756,7 +4263,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q09"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q09",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2772,7 +4285,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q10"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q10",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -2788,7 +4307,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q11"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q11",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2804,7 +4329,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q12"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q12",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2820,7 +4351,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q13"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q13",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -2836,7 +4373,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q14"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q14",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -2852,7 +4395,13 @@
       "section": "专项训练 1.1",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q15"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理一.md#formal-logic-p1-q15",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2868,7 +4417,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q01"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q01",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2884,7 +4439,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q02"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q02",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -2900,7 +4461,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q03"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q03",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -2916,7 +4483,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q04"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q04",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2932,7 +4505,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q05"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q05",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2948,7 +4527,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q06"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q06",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2964,7 +4549,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q07"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q07",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -2980,7 +4571,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q08"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q08",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -2996,7 +4593,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q09"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q09",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3012,7 +4615,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q10"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q10",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3028,7 +4637,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q11"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q11",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3044,7 +4659,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q12"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q12",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3060,7 +4681,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q13"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q13",
+      "topicId": "logic.argument",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3076,7 +4703,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q14"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q14",
+      "topicId": "logic.formal",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3092,7 +4725,13 @@
       "section": "专项训练 1.2",
       "topic": "形式逻辑与综合推理",
       "type": "logic",
-      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q15"
+      "source": "形式逻辑与综合推理/形式逻辑与综合推理二.md#formal-logic-p2-q15",
+      "topicId": "logic.reasoning",
+      "topicPath": [
+        "管综逻辑",
+        "综合推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3108,7 +4747,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q01"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q01",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3124,7 +4769,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q02"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q02",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3140,7 +4791,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q03"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q03",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3159,7 +4816,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q04"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q04",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3175,7 +4838,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q05"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q05",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3191,7 +4860,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q06"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q06",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3207,7 +4882,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q07"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q07",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3223,7 +4904,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q08"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q08",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3239,7 +4926,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q09"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q09",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3255,7 +4948,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q10"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q10",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3271,7 +4970,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q11"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q11",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3287,7 +4992,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q12"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q12",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3303,7 +5014,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q13"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q13",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3319,7 +5036,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q14"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q14",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3335,7 +5058,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q15"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q15",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3351,7 +5080,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q16"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q16",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3367,7 +5102,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q17"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q17",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3383,7 +5124,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q18"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q18",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3399,7 +5146,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q19"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q19",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3415,7 +5168,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q20"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q20",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3431,7 +5190,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q21"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q21",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3447,7 +5212,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q22"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q22",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3463,7 +5234,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q23"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q23",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3479,7 +5256,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q24"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q24",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3495,7 +5278,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q25"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q25",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3511,7 +5300,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q26"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q26",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3527,7 +5322,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q27"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q27",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3543,7 +5344,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q28"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q28",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3559,7 +5366,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q29"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q29",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3575,7 +5388,13 @@
       "section": "专项训练 2 五大条件类推理题",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q30"
+      "source": "专项训练二-五大条件类推理题/paper.md#reasoning-2-q30",
+      "topicId": "logic.conditional",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3591,7 +5410,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-01"
+      "source": "数学应用题/应用题.md#math-applied-profit-01",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3607,7 +5432,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-02"
+      "source": "数学应用题/应用题.md#math-applied-profit-02",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3623,7 +5454,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-03"
+      "source": "数学应用题/应用题.md#math-applied-profit-03",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3639,7 +5476,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-04"
+      "source": "数学应用题/应用题.md#math-applied-profit-04",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3655,7 +5498,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-05"
+      "source": "数学应用题/应用题.md#math-applied-profit-05",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3671,7 +5520,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-06"
+      "source": "数学应用题/应用题.md#math-applied-profit-06",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3687,7 +5542,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-07"
+      "source": "数学应用题/应用题.md#math-applied-profit-07",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3703,7 +5564,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-08"
+      "source": "数学应用题/应用题.md#math-applied-profit-08",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3719,7 +5586,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-09"
+      "source": "数学应用题/应用题.md#math-applied-profit-09",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3735,7 +5608,13 @@
       "section": "考点1 商品利润",
       "topic": "商品利润",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-profit-10"
+      "source": "数学应用题/应用题.md#math-applied-profit-10",
+      "topicId": "math.profit",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3751,7 +5630,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-01"
+      "source": "数学应用题/应用题.md#math-applied-distance-01",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3767,7 +5652,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-02"
+      "source": "数学应用题/应用题.md#math-applied-distance-02",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3783,7 +5674,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-03"
+      "source": "数学应用题/应用题.md#math-applied-distance-03",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3799,7 +5696,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-04"
+      "source": "数学应用题/应用题.md#math-applied-distance-04",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3815,7 +5718,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-05"
+      "source": "数学应用题/应用题.md#math-applied-distance-05",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3831,7 +5740,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-06"
+      "source": "数学应用题/应用题.md#math-applied-distance-06",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3847,7 +5762,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-distance-07"
+      "source": "数学应用题/应用题.md#math-applied-distance-07",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3863,7 +5784,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-08"
+      "source": "数学应用题/应用题.md#math-applied-distance-08",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3879,7 +5806,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-09"
+      "source": "数学应用题/应用题.md#math-applied-distance-09",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3895,7 +5828,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-10"
+      "source": "数学应用题/应用题.md#math-applied-distance-10",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -3911,7 +5850,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-11"
+      "source": "数学应用题/应用题.md#math-applied-distance-11",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3927,7 +5872,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-12"
+      "source": "数学应用题/应用题.md#math-applied-distance-12",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -3943,7 +5894,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-13"
+      "source": "数学应用题/应用题.md#math-applied-distance-13",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -3959,7 +5916,13 @@
       "section": "考点2 路程问题",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-distance-14"
+      "source": "数学应用题/应用题.md#math-applied-distance-14",
+      "topicId": "math.distance",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -3975,7 +5938,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-01"
+      "source": "数学应用题/应用题.md#math-applied-engineering-01",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -3991,7 +5960,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-02"
+      "source": "数学应用题/应用题.md#math-applied-engineering-02",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4007,7 +5982,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-03"
+      "source": "数学应用题/应用题.md#math-applied-engineering-03",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4023,7 +6004,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-04"
+      "source": "数学应用题/应用题.md#math-applied-engineering-04",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4039,7 +6026,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-05"
+      "source": "数学应用题/应用题.md#math-applied-engineering-05",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4055,7 +6048,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-06"
+      "source": "数学应用题/应用题.md#math-applied-engineering-06",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4071,7 +6070,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-07"
+      "source": "数学应用题/应用题.md#math-applied-engineering-07",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4087,7 +6092,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-08"
+      "source": "数学应用题/应用题.md#math-applied-engineering-08",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4103,7 +6114,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-09"
+      "source": "数学应用题/应用题.md#math-applied-engineering-09",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4119,7 +6136,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-10"
+      "source": "数学应用题/应用题.md#math-applied-engineering-10",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4135,7 +6158,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-11"
+      "source": "数学应用题/应用题.md#math-applied-engineering-11",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4151,7 +6180,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-12"
+      "source": "数学应用题/应用题.md#math-applied-engineering-12",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4167,7 +6202,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-13"
+      "source": "数学应用题/应用题.md#math-applied-engineering-13",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4183,7 +6224,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-14"
+      "source": "数学应用题/应用题.md#math-applied-engineering-14",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4199,7 +6246,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-15"
+      "source": "数学应用题/应用题.md#math-applied-engineering-15",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4215,7 +6268,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-16"
+      "source": "数学应用题/应用题.md#math-applied-engineering-16",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4231,7 +6290,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-17"
+      "source": "数学应用题/应用题.md#math-applied-engineering-17",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4247,7 +6312,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-18"
+      "source": "数学应用题/应用题.md#math-applied-engineering-18",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4263,7 +6334,13 @@
       "section": "考点3 工程问题",
       "topic": "工程问题",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-engineering-19"
+      "source": "数学应用题/应用题.md#math-applied-engineering-19",
+      "topicId": "math.engineering",
+      "topicPath": [
+        "管综数学",
+        "工程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4279,7 +6356,13 @@
       "section": "考点4 交叉比例法",
       "topic": "交叉比例法",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-cross-ratio-01"
+      "source": "数学应用题/应用题.md#math-applied-cross-ratio-01",
+      "topicId": "math.cross-ratio",
+      "topicPath": [
+        "管综数学",
+        "交叉比例法"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4295,7 +6378,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-01"
+      "source": "数学应用题/应用题.md#math-applied-concentration-01",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4311,7 +6400,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-02"
+      "source": "数学应用题/应用题.md#math-applied-concentration-02",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4327,7 +6422,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-03"
+      "source": "数学应用题/应用题.md#math-applied-concentration-03",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4343,7 +6444,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-04"
+      "source": "数学应用题/应用题.md#math-applied-concentration-04",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4359,7 +6466,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-05"
+      "source": "数学应用题/应用题.md#math-applied-concentration-05",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4375,7 +6488,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-06"
+      "source": "数学应用题/应用题.md#math-applied-concentration-06",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4391,7 +6510,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-07"
+      "source": "数学应用题/应用题.md#math-applied-concentration-07",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4407,7 +6532,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-08"
+      "source": "数学应用题/应用题.md#math-applied-concentration-08",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4423,7 +6554,13 @@
       "section": "考点5 溶液浓度",
       "topic": "溶液浓度",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-concentration-09"
+      "source": "数学应用题/应用题.md#math-applied-concentration-09",
+      "topicId": "math.concentration",
+      "topicPath": [
+        "管综数学",
+        "溶液浓度"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4439,7 +6576,13 @@
       "section": "考点6 分段计费",
       "topic": "分段计费",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-01"
+      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-01",
+      "topicId": "math.tiered-pricing",
+      "topicPath": [
+        "管综数学",
+        "分段计费"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4455,7 +6598,13 @@
       "section": "考点6 分段计费",
       "topic": "分段计费",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-02"
+      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-02",
+      "topicId": "math.tiered-pricing",
+      "topicPath": [
+        "管综数学",
+        "分段计费"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4471,7 +6620,13 @@
       "section": "考点6 分段计费",
       "topic": "分段计费",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-03"
+      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-03",
+      "topicId": "math.tiered-pricing",
+      "topicPath": [
+        "管综数学",
+        "分段计费"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4487,7 +6642,13 @@
       "section": "考点6 分段计费",
       "topic": "分段计费",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-04"
+      "source": "数学应用题/应用题.md#math-applied-tiered-pricing-04",
+      "topicId": "math.tiered-pricing",
+      "topicPath": [
+        "管综数学",
+        "分段计费"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4503,7 +6664,13 @@
       "section": "考点7 集合",
       "topic": "集合",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-sets-01"
+      "source": "数学应用题/应用题.md#math-applied-sets-01",
+      "topicId": "math.sets",
+      "topicPath": [
+        "管综数学",
+        "集合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4519,7 +6686,13 @@
       "section": "考点7 集合",
       "topic": "集合",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-sets-02"
+      "source": "数学应用题/应用题.md#math-applied-sets-02",
+      "topicId": "math.sets",
+      "topicPath": [
+        "管综数学",
+        "集合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4535,7 +6708,13 @@
       "section": "考点7 集合",
       "topic": "集合",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-sets-03"
+      "source": "数学应用题/应用题.md#math-applied-sets-03",
+      "topicId": "math.sets",
+      "topicPath": [
+        "管综数学",
+        "集合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4551,7 +6730,13 @@
       "section": "考点7 集合",
       "topic": "集合",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-sets-04"
+      "source": "数学应用题/应用题.md#math-applied-sets-04",
+      "topicId": "math.sets",
+      "topicPath": [
+        "管综数学",
+        "集合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4567,7 +6752,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-01"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-01",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4583,7 +6774,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-02"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-02",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4599,7 +6796,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-03"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-03",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4615,7 +6818,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-04"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-04",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4631,7 +6840,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-05"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-05",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4647,7 +6862,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-06"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-06",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4663,7 +6884,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-07"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-07",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4679,7 +6906,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-08"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-08",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4695,7 +6928,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-09"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-09",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4711,7 +6950,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-10"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-10",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4727,7 +6972,13 @@
       "section": "考点8 不定方程",
       "topic": "不定方程",
       "type": "data-sufficiency",
-      "source": "数学应用题/应用题.md#math-applied-diophantine-11"
+      "source": "数学应用题/应用题.md#math-applied-diophantine-11",
+      "topicId": "math.diophantine",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4743,7 +6994,13 @@
       "section": "考点9 线性规划",
       "topic": "线性规划",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-linear-programming-01"
+      "source": "数学应用题/应用题.md#math-applied-linear-programming-01",
+      "topicId": "math.linear-programming",
+      "topicPath": [
+        "管综数学",
+        "线性规划"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4759,7 +7016,13 @@
       "section": "考点9 线性规划",
       "topic": "线性规划",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-linear-programming-02"
+      "source": "数学应用题/应用题.md#math-applied-linear-programming-02",
+      "topicId": "math.linear-programming",
+      "topicPath": [
+        "管综数学",
+        "线性规划"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4775,7 +7038,13 @@
       "section": "考点9 线性规划",
       "topic": "线性规划",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-linear-programming-03"
+      "source": "数学应用题/应用题.md#math-applied-linear-programming-03",
+      "topicId": "math.linear-programming",
+      "topicPath": [
+        "管综数学",
+        "线性规划"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4791,7 +7060,13 @@
       "section": "考点10 至少至多",
       "topic": "至少至多",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-01"
+      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-01",
+      "topicId": "math.at-least-at-most",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4807,7 +7082,13 @@
       "section": "考点10 至少至多",
       "topic": "至少至多",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-02"
+      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-02",
+      "topicId": "math.at-least-at-most",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4823,7 +7104,13 @@
       "section": "考点10 至少至多",
       "topic": "至少至多",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-03"
+      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-03",
+      "topicId": "math.at-least-at-most",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4839,7 +7126,13 @@
       "section": "考点10 至少至多",
       "topic": "至少至多",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-04"
+      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-04",
+      "topicId": "math.at-least-at-most",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -4855,7 +7148,13 @@
       "section": "考点10 至少至多",
       "topic": "至少至多",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-05"
+      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-05",
+      "topicId": "math.at-least-at-most",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4871,7 +7170,13 @@
       "section": "考点10 至少至多",
       "topic": "至少至多",
       "type": "problem",
-      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-06"
+      "source": "数学应用题/应用题.md#math-applied-at-least-at-most-06",
+      "topicId": "math.at-least-at-most",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4887,7 +7192,14 @@
       "section": "错题重练",
       "topic": "概率",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q01"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q01",
+      "topicId": "math.probability",
+      "origin": "2020-exam-q004",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4903,7 +7215,14 @@
       "section": "错题重练",
       "topic": "条件充分性判断",
       "type": "data-sufficiency",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q02"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q02",
+      "topicId": "math.geometry",
+      "origin": "2020-exam-q016",
+      "topicPath": [
+        "管综数学",
+        "平面几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4919,7 +7238,14 @@
       "section": "错题重练",
       "topic": "线性规划",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q03"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q03",
+      "topicId": "math.linear-programming",
+      "origin": "math-applied-linear-programming-01",
+      "topicPath": [
+        "管综数学",
+        "线性规划"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -4935,7 +7261,14 @@
       "section": "错题重练",
       "topic": "论证推理",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q04"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q04",
+      "topicId": "logic.argument",
+      "origin": "2020-exam-q027",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4951,7 +7284,14 @@
       "section": "错题重练",
       "topic": "形式逻辑",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q05"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q05",
+      "topicId": "logic.formal",
+      "origin": "formal-logic-p1-q03",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -4967,7 +7307,14 @@
       "section": "错题重练",
       "topic": "解析几何",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q06"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q06",
+      "topicId": "math.analytic-geometry",
+      "origin": "2020-exam-q007",
+      "topicPath": [
+        "管综数学",
+        "解析几何"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -4983,7 +7330,14 @@
       "section": "错题重练",
       "topic": "概率",
       "type": "data-sufficiency",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q07"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q07",
+      "topicId": "math.probability",
+      "origin": "2020-exam-q019",
+      "topicPath": [
+        "管综数学",
+        "概率"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -4999,7 +7353,14 @@
       "section": "错题重练",
       "topic": "应用题",
       "type": "data-sufficiency",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q08"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q08",
+      "topicId": "math.diophantine",
+      "origin": "2020-exam-q020",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -5015,7 +7376,14 @@
       "section": "错题重练",
       "topic": "论证推理",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q09"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q09",
+      "topicId": "logic.argument",
+      "origin": "2020-exam-q043",
+      "topicPath": [
+        "管综逻辑",
+        "论证推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -5031,7 +7399,14 @@
       "section": "错题重练",
       "topic": "线性规划",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q10"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q10",
+      "topicId": "math.linear-programming",
+      "origin": "math-applied-linear-programming-02",
+      "topicPath": [
+        "管综数学",
+        "线性规划"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -5047,7 +7422,14 @@
       "section": "错题重练",
       "topic": "至少至多",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q11"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q11",
+      "topicId": "math.at-least-at-most",
+      "origin": "math-applied-at-least-at-most-02",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -5063,7 +7445,14 @@
       "section": "错题重练",
       "topic": "不定方程",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q12"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q12",
+      "topicId": "math.diophantine",
+      "origin": "math-applied-diophantine-03",
+      "topicPath": [
+        "管综数学",
+        "不定方程"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -5079,7 +7468,14 @@
       "section": "错题重练",
       "topic": "形式逻辑",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q13"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q13",
+      "topicId": "logic.conditional",
+      "origin": "formal-logic-p1-q08",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -5095,7 +7491,14 @@
       "section": "错题重练",
       "topic": "形式逻辑",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q14"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q14",
+      "topicId": "logic.formal",
+      "origin": "formal-logic-p2-q05",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -5111,7 +7514,14 @@
       "section": "错题重练",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q15"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q15",
+      "topicId": "logic.conditional",
+      "origin": "reasoning-2-q04",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -5127,7 +7537,14 @@
       "section": "错题重练",
       "topic": "商品利润",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q16"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q16",
+      "topicId": "math.profit",
+      "origin": "math-applied-profit-06",
+      "topicPath": [
+        "管综数学",
+        "商品利润"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -5143,7 +7560,14 @@
       "section": "错题重练",
       "topic": "路程问题",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q17"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q17",
+      "topicId": "math.distance",
+      "origin": "math-applied-distance-04",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -5159,7 +7583,14 @@
       "section": "错题重练",
       "topic": "路程问题",
       "type": "data-sufficiency",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q18"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q18",
+      "topicId": "math.distance",
+      "origin": "math-applied-distance-13",
+      "topicPath": [
+        "管综数学",
+        "路程问题"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -5175,7 +7606,14 @@
       "section": "错题重练",
       "topic": "集合",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q19"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q19",
+      "topicId": "math.sets",
+      "origin": "math-applied-sets-01",
+      "topicPath": [
+        "管综数学",
+        "集合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -5191,7 +7629,14 @@
       "section": "错题重练",
       "topic": "至少至多",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q20"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q20",
+      "topicId": "math.at-least-at-most",
+      "origin": "math-applied-at-least-at-most-03",
+      "topicPath": [
+        "管综数学",
+        "至少至多"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "D",
@@ -5207,7 +7652,14 @@
       "section": "错题重练",
       "topic": "排列组合",
       "type": "problem",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q21"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q21",
+      "topicId": "math.combinatorics",
+      "origin": "2020-exam-q015",
+      "topicPath": [
+        "管综数学",
+        "排列组合"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "C",
@@ -5223,7 +7675,14 @@
       "section": "错题重练",
       "topic": "形式逻辑",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q22"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q22",
+      "topicId": "logic.conditional",
+      "origin": "formal-logic-p1-q15",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "E",
@@ -5239,7 +7698,14 @@
       "section": "错题重练",
       "topic": "形式逻辑",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q23"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q23",
+      "topicId": "logic.formal",
+      "origin": "formal-logic-p2-q07",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "A",
@@ -5255,7 +7721,14 @@
       "section": "错题重练",
       "topic": "逻辑推理",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q24"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q24",
+      "topicId": "logic.formal",
+      "origin": "2020-exam-q034",
+      "topicPath": [
+        "管综逻辑",
+        "形式逻辑"
+      ],
+      "granularity": "topic"
     },
     {
       "answer": "B",
@@ -5271,7 +7744,14 @@
       "section": "错题重练",
       "topic": "条件类推理",
       "type": "logic",
-      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q25"
+      "source": "错题重练-2026-11-09/paper.md#redo-20261109-q25",
+      "topicId": "logic.conditional",
+      "origin": "reasoning-2-q12",
+      "topicPath": [
+        "管综逻辑",
+        "条件类推理"
+      ],
+      "granularity": "topic"
     }
   ],
   "sessions": [
