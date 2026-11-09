@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-09T09:16:19+08:00",
+    "generatedAt": "2026-11-09T21:05:20+08:00",
     "generator": "scripts/build_index.py",
     "sourceFiles": 53,
     "coverage": {
@@ -10,10 +10,10 @@
       "redoRows": 12
     },
     "timing": {
-      "session": 19,
+      "session": 20,
       "per-question": 0,
       "mixed": 1,
-      "none": 17
+      "none": 16
     },
     "errors": []
   },
@@ -5517,9 +5517,9 @@
       "file": "错题重练-2026-11-09/answer2.md",
       "volume": "redo-20261109",
       "questionCount": 10,
-      "timingMode": "none",
-      "durationMin": null,
-      "durationSource": null,
+      "timingMode": "session",
+      "durationMin": 48.0,
+      "durationSource": "draft",
       "note": null
     }
   ],
