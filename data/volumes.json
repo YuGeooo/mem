@@ -67,6 +67,24 @@
       "totalQuestions": 81,
       "scorableQuestions": 81,
       "notes": "题号按考点重新从 1 编号；ID 必须带 topic；带 (1)(2) 两小问的是条件充分性判断题"
+    },
+    {
+      "slug": "redo-20261109",
+      "name": "错题重练 2026-11-09（跨卷 5 题）",
+      "subject": "管综",
+      "papers": ["错题重练/paper.md"],
+      "answerSources": ["错题重练/答案速查.md"],
+      "answerGlobs": ["错题重练/answer*.md"],
+      "totalQuestions": 5,
+      "scorableQuestions": 5,
+      "redoQuestions": [
+        {"number": 1, "type": "problem", "topic": "概率", "origin": "2020-exam-q004"},
+        {"number": 2, "type": "data-sufficiency", "topic": "条件充分性判断", "origin": "2020-exam-q016"},
+        {"number": 3, "type": "problem", "topic": "线性规划", "origin": "math-applied-linear-programming-01"},
+        {"number": 4, "type": "logic", "topic": "论证推理", "origin": "2020-exam-q027"},
+        {"number": 5, "type": "logic", "topic": "形式逻辑", "origin": "formal-logic-p1-q03"}
+      ],
+      "notes": "跨卷重练作为独立卷：题号在本卷重编 1–5，paper.md 逐字转录原卷题干并注明原题 ID，答案取自各原卷已确认答案。answerGlobs 指向场次文件，redoQuestions 是题型 / 考点 / 原题 ID 元数据。新增重练卷请另建目录并同步这些字段。"
     }
   ],
   "topicAliases": {

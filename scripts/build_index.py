@@ -55,7 +55,7 @@ def rel(path: Path) -> str:
     return path.relative_to(ROOT).as_posix()
 
 
-def files_of(slug: str) -> list[Path]:
+def files_of(slug: str, extra: dict[str, list[str]] | None = None) -> list[Path]:
     patterns = {
         "2020-exam": ["2020年管综合真题/answer*.md"],
         "2024-exam": ["2024年管综真题/answer*.md"],
@@ -64,8 +64,9 @@ def files_of(slug: str) -> list[Path]:
         "reasoning-2": ["专项训练二-*/answer*/answer*.md"],
         "math-applied": ["数学应用题/answer*/answer*.md"],
     }
+    pats = (extra or {}).get(slug) or patterns[slug]
     out: list[Path] = []
-    for pat in patterns[slug]:
+    for pat in pats:
         out.extend(ROOT.glob(pat))
     return sorted(out, key=lambda p: (natural_key(p), p.name))
 
@@ -366,6 +367,22 @@ def build_questions(cfg: dict) -> tuple[list[dict], list[str]]:
                 type="data-sufficiency" if key in ds else "problem",
                 answer=am.get(key), answerSource="数学应用题/answer*/answer*.md 判定表",
                 source=f"数学应用题/应用题.md#{qid_math(t['topic'], n)}")
+
+    # 跨卷错题重练卷：题目 ID 独立，题干在卷内 paper.md，答案取卷内答案速查
+    for vol in cfg["volumes"]:
+        if not vol.get("redoQuestions"):
+            continue
+        slug = vol["slug"]
+        ans = answers_from_key(vol["answerSources"][0])
+        if len(vol["redoQuestions"]) != vol["totalQuestions"]:
+            errors.append(f"{slug}: redoQuestions 条数 ≠ totalQuestions")
+        for meta in vol["redoQuestions"]:
+            n = meta["number"]
+            add(id=f"{slug}-q{n:02d}", volume=slug, paper=vol["papers"][0],
+                number=n, section="错题重练", topic=meta["topic"], type=meta["type"],
+                answer=ans.get(n), answerSource=vol["answerSources"][0],
+                source=f"{vol['papers'][0]}#{slug}-q{n:02d}",
+                notes=f"原题 {meta['origin']}")
     return qs, errors
 
 
@@ -391,9 +408,10 @@ def parse_duration(value: str | None) -> float | None:
 
 def build_sessions(cfg: dict) -> list[dict]:
     out: list[dict] = []
+    extra = {v["slug"]: v["answerGlobs"] for v in cfg["volumes"] if v.get("answerGlobs")}
     for vol in cfg["volumes"]:
         slug = vol["slug"]
-        for path in files_of(slug):
+        for path in files_of(slug, extra):
             fm = parse_front_matter(read(rel(path)))
             date = (fm.get("time") or "")[:10]
             dur = parse_duration(fm.get("duration"))
@@ -536,6 +554,8 @@ def attempts_table(sess: dict, qmap: dict, slug: str, aliases: dict) -> tuple[li
         elif slug == "formal-logic":
             paper = 1 if "/answer1/" in sess["file"] else 2
             qid = qid_formal(paper, num)
+        elif slug.startswith("redo-"):
+            qid = f"{slug}-q{num:02d}"
         else:
             qid = qid_reasoning(num)
         ca = first_letter(correct_cell.strip()) or qmap.get(qid, {}).get("answer")
@@ -624,6 +644,9 @@ def build_attempts(sessions: list[dict], qmap: dict, cfg: dict,
             if a["correct"] is None:
                 exceptions.append(f"{a['sessionId']} {a['questionId']}: {a['note'] or '未判定'}")
     add_subjective(sessions, attempts, scores, qmap)
+    for a in attempts:
+        if a["sessionId"].startswith("redo-"):
+            a["isRedo"] = True
     attach_redo(attempts, redo)
     return attempts, redo, issues, exceptions
 
@@ -658,6 +681,9 @@ def check_source_numbers(cfg: dict) -> list[str]:
     eng = [int(x) for x in re.findall(r"^(\d+)\.\s+A\.", read("2025年英语二/paper.md"), re.M)]
     if eng != list(range(1, 21)):
         errors.append(f"英语完形: 题号应为 1–20，实际 {eng}")
+    for vol in cfg["volumes"]:
+        if vol.get("redoQuestions"):
+            check(vol["slug"], vol["papers"][0], r"^\*\*(\d+)\.\*\*", vol["totalQuestions"])
     return errors
 
 

@@ -154,6 +154,7 @@ v0.1 §2.3 把网站解析结果（31 场、15 场 duration、解析来源 expli
 | 形式逻辑与综合推理 | `formal-logic` |
 | 专项训练二-五大条件类推理题 | `reasoning-2` |
 | 数学应用题 | `math-applied` |
+| 错题重练卷（每场一卷） | `redo-<日期>`，如 `redo-20261109` |
 
 ### 3.2 题目 ID 格式
 
@@ -266,6 +267,10 @@ python3 scripts/query.py --topic 路程 --csv > 路程错题.csv     # 给人看
 | `answerOverrides` | object，答案的显式订正（题 ID → 字母）；**原文保留不改**，依据写进 `notes`，见 §5.3 |
 | `topicAliases` | 判定表与 `待重做.md` 里的中文简称 → topic slug，供 ID 生成、题号映射、映射校验共用 |
 | `mathTopics` | 考点序号、名称、slug、题数；用于生成数学 ID、校验题号 1–N 连续 |
+| `answerGlobs` | string[]，该卷场次文件的 glob；不写则用 `files_of()` 内置的按卷默认路径 |
+| `redoQuestions` | object[]，跨卷重练卷专用：`number` / `type` / `topic` / `origin`（原题 ID）；脚本据此生成题目，题号在本卷重编 |
+
+**跨卷重练卷**：把一次重练的错题当作独立卷处理 —— `paper.md` 逐字转录题干并注明原题 ID，`答案速查.md` 给答案，`answer<N>.md` 是场次（判定表按本卷题号 1–N）。题目 ID 形如 `redo-<日期>-qNN`，与原题是「同一道题、两个 ID」，不复用原卷 ID，避免跨卷题号错位；原卷的「待重做」台账仍单独记录重做进度。`build_index.py` 从 `answerGlobs` 发现场次、从 `redoQuestions` 生成题目、校验 `paper.md` 题号与锚点，并把该场次的 attempt 标 `isRedo: true`。
 
 `paper.md` 的 front matter 只放稳定标识（`slug`、`subject`），**不放题数**——计数由 `volumes.json` 一处维护，避免第二个计数源漂移。
 
