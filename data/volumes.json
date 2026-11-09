@@ -75,14 +75,24 @@
       "papers": ["错题重练-2026-11-09/paper.md"],
       "answerSources": ["错题重练-2026-11-09/答案速查.md"],
       "answerGlobs": ["错题重练-2026-11-09/answer*.md"],
-      "totalQuestions": 5,
-      "scorableQuestions": 5,
+      "totalQuestions": 15,
+      "scorableQuestions": 15,
       "redoQuestions": [
         {"number": 1, "type": "problem", "topic": "概率", "origin": "2020-exam-q004"},
         {"number": 2, "type": "data-sufficiency", "topic": "条件充分性判断", "origin": "2020-exam-q016"},
         {"number": 3, "type": "problem", "topic": "线性规划", "origin": "math-applied-linear-programming-01"},
         {"number": 4, "type": "logic", "topic": "论证推理", "origin": "2020-exam-q027"},
-        {"number": 5, "type": "logic", "topic": "形式逻辑", "origin": "formal-logic-p1-q03"}
+        {"number": 5, "type": "logic", "topic": "形式逻辑", "origin": "formal-logic-p1-q03"},
+        {"number": 6, "type": "problem", "topic": "解析几何", "origin": "2020-exam-q007"},
+        {"number": 7, "type": "data-sufficiency", "topic": "概率", "origin": "2020-exam-q019"},
+        {"number": 8, "type": "data-sufficiency", "topic": "应用题", "origin": "2020-exam-q020"},
+        {"number": 9, "type": "logic", "topic": "论证推理", "origin": "2020-exam-q043"},
+        {"number": 10, "type": "problem", "topic": "线性规划", "origin": "math-applied-linear-programming-02"},
+        {"number": 11, "type": "problem", "topic": "至少至多", "origin": "math-applied-at-least-at-most-02"},
+        {"number": 12, "type": "problem", "topic": "不定方程", "origin": "math-applied-diophantine-03"},
+        {"number": 13, "type": "logic", "topic": "形式逻辑", "origin": "formal-logic-p1-q08"},
+        {"number": 14, "type": "logic", "topic": "形式逻辑", "origin": "formal-logic-p2-q05"},
+        {"number": 15, "type": "logic", "topic": "条件类推理", "origin": "reasoning-2-q04"}
       ],
       "notes": "跨卷重练作为独立卷：题号在本卷重编 1–5，paper.md 逐字转录原卷题干并注明原题 ID，答案取自各原卷已确认答案。answerGlobs 指向场次文件，redoQuestions 是题型 / 考点 / 原题 ID 元数据。新增重练卷请另建目录并同步这些字段。"
     }
