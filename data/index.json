@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generatedAt": "2026-11-10T09:03:41+08:00",
+    "generatedAt": "2026-11-11T09:00:24+08:00",
     "generator": "scripts/build_index.py",
-    "sourceFiles": 55,
+    "sourceFiles": 56,
     "coverage": {
       "questions": 328,
-      "attempts": 315,
-      "sessions": 39,
+      "attempts": 317,
+      "sessions": 40,
       "redoRows": 12
     },
     "timing": {
-      "session": 22,
+      "session": 23,
       "per-question": 0,
       "mixed": 1,
       "none": 16
@@ -8031,6 +8031,17 @@
       "note": null
     },
     {
+      "id": "reasoning-2-a2-4",
+      "date": "2026-11-11",
+      "file": "专项训练二-五大条件类推理题/answer2/answer2-4.md",
+      "volume": "reasoning-2",
+      "questionCount": 2,
+      "timingMode": "session",
+      "durationMin": 56.0,
+      "durationSource": "draft",
+      "note": null
+    },
+    {
       "id": "math-applied-a1",
       "date": "2026-10-27",
       "file": "数学应用题/answer1/answer1.md",
@@ -12627,6 +12638,50 @@
       "durationMin": null,
       "durationSource": null,
       "source": "专项训练二-五大条件类推理题/answer2/answer2-3.md 判定表 17",
+      "verified": true,
+      "note": null
+    },
+    {
+      "id": "2026-11-11-reasoning-2-a2-4-reasoning-2-q18",
+      "date": "2026-11-11",
+      "sessionId": "reasoning-2-a2-4",
+      "session": "专项训练二-五大条件类推理题/answer2/answer2-4.md",
+      "questionId": "reasoning-2-q18",
+      "userAnswer": "A",
+      "correctAnswer": "A",
+      "correct": true,
+      "substantiveCorrect": true,
+      "score": null,
+      "scoreMax": null,
+      "scoreBasis": null,
+      "errorTags": [],
+      "errorNote": null,
+      "isRedo": false,
+      "durationMin": null,
+      "durationSource": null,
+      "source": "专项训练二-五大条件类推理题/answer2/answer2-4.md 判定表 18",
+      "verified": true,
+      "note": null
+    },
+    {
+      "id": "2026-11-11-reasoning-2-a2-4-reasoning-2-q19",
+      "date": "2026-11-11",
+      "sessionId": "reasoning-2-a2-4",
+      "session": "专项训练二-五大条件类推理题/answer2/answer2-4.md",
+      "questionId": "reasoning-2-q19",
+      "userAnswer": "D",
+      "correctAnswer": "D",
+      "correct": true,
+      "substantiveCorrect": true,
+      "score": null,
+      "scoreMax": null,
+      "scoreBasis": null,
+      "errorTags": [],
+      "errorNote": null,
+      "isRedo": false,
+      "durationMin": null,
+      "durationSource": null,
+      "source": "专项训练二-五大条件类推理题/answer2/answer2-4.md 判定表 19",
       "verified": true,
       "note": null
     },
